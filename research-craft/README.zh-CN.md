@@ -12,8 +12,6 @@
 
 **安装一个 Skill，按任务调用不同能力。** 下表中的功能共用 `research-craft` 入口，无需分别安装。可以直接描述研究问题，也可以用 `$research-craft` 明确调用。
 
-版本：**1.3.1-rc.1**（候选版） · 研究工作区格式：**schema 1**
-
 ![ResearchCraft 能力地图](docs/images/capability-map.png)
 
 ## 功能与使用入口

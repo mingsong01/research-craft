@@ -16,7 +16,7 @@
 <text x="731" y="262" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#A3BDCF" text-anchor="end">01</text>
 <path d="M89 337L744 337" fill="none" stroke="#D8E7F1" stroke-width="1.5"/>
 <circle cx="103" cy="377" r="4" fill="#2369EE" stroke="none"/>
-<text x="122" y="385" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">数据质量、指标与可比性</text>
+<text x="122" y="385" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">实验记录、指标与可比性</text>
 <circle cx="103" cy="422" r="4" fill="#2369EE" stroke="none"/>
 <text x="122" y="430" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">代码 / 日志定位与异常诊断</text>
 <circle cx="103" cy="467" r="4" fill="#2369EE" stroke="none"/>

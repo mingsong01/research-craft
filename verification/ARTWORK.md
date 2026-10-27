@@ -1,16 +1,17 @@
-# Illustration sources and scope
+# Artwork and editable sources
 
-The six explanatory diagrams in research-craft/docs/images/ were newly authored for the 2026-10-27 public snapshot as editable SVG and locally rendered to PNG with an existing browser. The reference ZIP and reference screenshots were not copied or redistributed. No external image generation API, font-file bundle, paid service or new renderer was used.
+The documentation uses original SVG illustrations with locally rendered PNG previews. SVG retains editable text and shapes; PNG provides a consistent preview across GitHub readers' font environments.
 
-| Image | Actual subject |
+| Illustration | Subject |
 | --- | --- |
-| hero-banner | One integrated research Skill and four capability areas |
-| capability-map | Inputs, methods and deliverables available in the current source |
-| workflow-overview | Select necessary work, locate evidence, produce, check and stop |
-| diagram-pipeline | Topology evidence, design, editable vector and separate quality checks |
-| writing-pipeline | Diagnosis, minimal revision and scientific/language fidelity |
-| context-efficiency | Progressive loading with recoverable source evidence |
+| [hero-banner](../research-craft/docs/images/hero-banner.svg) | The research workflow and capability areas |
+| [capability-map](../research-craft/docs/images/capability-map.svg) | Analysis, diagrams, writing and context |
+| [workflow-overview](../research-craft/docs/images/workflow-overview.svg) | From a question to traceable outputs |
+| [research-records](../research-craft/docs/images/research-records.svg) | Issues, experiments, evidence, decisions and changes |
+| [diagram-pipeline](../research-craft/docs/images/diagram-pipeline.svg) | Model evidence, editable figures and final-size review |
+| [writing-pipeline](../research-craft/docs/images/writing-pipeline.svg) | Diagnosis, revision and fidelity |
+| [context-efficiency](../research-craft/docs/images/context-efficiency.svg) | Progressive reading and source recovery |
 
-The two example-*.png previews were rendered from the unchanged synthetic SVGs at research-craft/demo/publication/multimodal-A/architecture.svg and research-craft/demo/publication/unet-multiscale/architecture.svg. Their original FigureSpec/topology inputs remain beside the SVGs. They are illustrative test architectures, not evidence of fidelity to a trained real-world model.
+Two additional previews illustrate synthetic [multimodal](../research-craft/demo/publication/multimodal-A/architecture.svg) and [multiscale](../research-craft/demo/publication/unet-multiscale/architecture.svg) architectures. FigureSpec and topology inputs are included alongside their SVGs. These examples demonstrate formats and visual conventions; real models require their own structure evidence.
 
-Source SVGs retain editable text and shapes. PNGs provide consistent GitHub previews without requiring the reader to have the author's CJK fonts. No complete third-party paper figure or supplied reference screenshot is redistributed.
+For artwork reuse, see [license information](../LICENSE_STATUS.md).

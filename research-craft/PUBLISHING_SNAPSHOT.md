@@ -1,21 +1,25 @@
-# Public snapshot — 2026-10-27
+# Compatibility and known limits
 
-Skill: research-craft 1.3.1-rc.1; workspace schema 1. This dated distribution includes completed diagram reliability/design, scientific-writing/reviewer and context-efficiency increments. The scientific instructions, implementation, templates, existing synthetic example source and regression tests were not changed for the documentation/publication task.
+ResearchCraft 1.3.1-rc.1 uses research workspace schema 1. The complete Skill includes research methods, records, data and diagram tools, templates and synthetic examples.
 
-## Checks and interpretation
+## Diagrams
 
-The engineering baseline has 110 unit tests and 60 offline contracts. Publication runs the suite, contracts and tracked demo against the staged package and a fresh ZIP extraction; the public build record is verification/local-checks.json. Read its actual status and counts. No paid model evaluation is part of publication.
+The model examples are synthetic architectures. Their topology definitions support checking those examples; real models require their own code or method evidence. Examples target 180 mm. Direct scaling to 85 mm has readability limitations and may require a separate layout.
 
-Six original explanatory SVGs and their PNGs are documentation schematics, not experimental data or model-quality evidence. Two additional previews come from unchanged synthetic example SVGs included in demo/publication/. They do not establish agreement with a real trained implementation.
+Existing Bybit profile warnings need case-specific review. Native-editor round trips, printing and cross-platform font rendering have not been comprehensively verified. Inspect actual renders at the intended size.
 
-Known limits remain: finite synthetic model coverage; direct 85mm scaling problems; existing profile warnings; incomplete real-code agreement and native-editor/print/cross-platform verification; provisional guidance attribution; no independent general writing/aesthetic certification and no measured task-level Token-saving percentage.
+## Writing and research judgment
 
-Historical model results in EVALUATION_SUMMARY.md describe their frozen historical version. They are not a new evaluation of the current snapshot. GitHub CI results are not claimed: the preserved nested workflow is an example; this public package does not enable a root automatic Actions workflow.
+Section methods and experience-derived guidance support diagnosis and revision. Relevance depends on the study and evidence. Some historical guidance has uncertain attribution or adoption history; treat it as conditional experience rather than a verified quotation or universal rule.
 
-## Publication boundary
+General writing quality, visual aesthetics and advisor-level judgment have not received independent certification. Authors remain responsible for the final research and manuscript.
 
-Included: the complete installable Skill, documentation, original illustrations, synthetic examples, scripts, tests, offline contracts, source attribution and retained third-party licenses.
+## Efficiency and checks
 
-Excluded: development workspaces, private papers/corpora, mentor transcripts, review correspondence, raw model responses, account/browser state, credentials, host-specific paths, private validation folders, held-out questions/keys and stopped evaluation-infrastructure plans.
+Progressive loading and bounded tools aim to reduce unrelated reading and output. No general task-level Token-saving percentage or execution-time improvement has been established.
 
-The original-work license remains deferred; see LICENSE_STATUS.md. This is a dated public candidate snapshot, not a new stable semantic release or a guarantee of publisher compliance. Existing historical archives are not overwritten.
+Current engineering coverage includes 110 tests, 60 offline contracts, a demo and fresh archive extraction. See [local checks](RELEASE_CHECKS.md). [Historical model results](EVALUATION_SUMMARY.md) describe an earlier frozen version.
+
+## Data and reuse
+
+The repository provides general methods and synthetic examples. Processing research inputs should follow project permissions and host policies. See [data handling](SECURITY.md) and [license information](LICENSE_STATUS.md).

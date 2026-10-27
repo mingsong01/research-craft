@@ -25,7 +25,7 @@
 <g transform="translate(693 245) scale(0.9)" fill="none" stroke="#7961D9" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4H43L56 17V61H15ZM43 4V18H56M24 29H46M24 39H46M24 49H39"/></g>
 <text x="692" y="356" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#0B1C38" text-anchor="start">最小有效修改</text>
 <text x="693" y="388" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Revise</text>
-<text x="692" y="449" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">给出实际修订稿</text>
+<text x="692" y="449" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">形成修订段落</text>
 <text x="692" y="486" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">语言与科学修改分开</text>
 <path d="M940 394L960 394" fill="none" stroke="#02BBD2" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="970" y="220" width="264" height="345" rx="20" fill="url(#glass)" stroke="#CCDFEE" stroke-width="1.2"/>
@@ -37,8 +37,8 @@
 <path d="M1242 394L1262 394" fill="none" stroke="#02BBD2" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1272" y="220" width="264" height="345" rx="20" fill="url(#glass)" stroke="#CCDFEE" stroke-width="1.2"/>
 <g transform="translate(1297 245) scale(0.9)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8H58V42H35L22 55V42H7ZM18 20H47M18 30H40"/></g>
-<text x="1296" y="356" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#0B1C38" text-anchor="start">完成交付</text>
-<text x="1297" y="388" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Deliver</text>
+<text x="1296" y="356" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#0B1C38" text-anchor="start">整理文稿</text>
+<text x="1297" y="388" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Manuscript</text>
 <text x="1296" y="449" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">正文 / 译文 / 回信</text>
 <text x="1296" y="486" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">理由、来源与未决项</text>
 <text x="64" y="622" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="600" fill="#0B1C38" text-anchor="start">九类章节，按当前问题选读 / Section-specific guidance, loaded on demand</text>

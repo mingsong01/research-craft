@@ -24,8 +24,8 @@ Registry mutations validate fields, hold an exclusive workspace lock, reject dup
 
 ## Reporting issues
 
-Before public distribution, the publisher should add a maintained private vulnerability-reporting channel and coordinated-disclosure policy. Do not include sensitive exploit details in a public issue.
+For ordinary defects, open an Issue with a sanitized reproduction. A dedicated private vulnerability-reporting channel is not currently documented; avoid posting credentials, private research or sensitive exploit details in public Issues.
 
 ## License and distribution
 
-No license is selected by this Skill. The publisher must choose an appropriate `LICENSE`, ownership model, support policy, and distribution terms before external release.
+The original work has no project-wide license yet. See [license information](LICENSE_STATUS.md) and [third-party notices](THIRD_PARTY_NOTICES.md) for the applicable components.

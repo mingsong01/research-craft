@@ -1,147 +1,140 @@
 <div align="center">
-<img src="research-craft/docs/images/hero-banner.png" alt="ResearchCraft: evidence-driven scientific analysis, model diagrams, academic writing and reviewer response" width="100%" />
+<img src="research-craft/docs/images/hero-banner.png" alt="ResearchCraft: research analysis, model diagrams, scientific writing and reviewer response" width="100%" />
 
 # ResearchCraft · research-craft
 
-**Connect source evidence, scientific judgment and checked research artifacts.**
+**Evidence-based analysis, traceable experiments and clear scientific communication.**
 
-[中文完整说明](README.md) · [Usage and commands](research-craft/docs/USAGE.zh-CN.md) · [Snapshot checks](research-craft/PUBLISHING_SNAPSHOT.md)
+[中文](README.md) · [Get started](#getting-started) · [Feature guide](research-craft/docs/FEATURES.en.md) · [Research records](research-craft/docs/RECORDS.en.md)
 </div>
 
-ResearchCraft is **one integrated Codex Skill** for scientific analysis, editable model diagrams, manuscript revision, faithful translation and reviewer response. Its references, scripts and examples are loaded as needed. The four capability areas are not four separate installations or autonomous agents.
+ResearchCraft is a Codex Skill for literature, code and experiment analysis, research records, editable model diagrams, manuscript revision, translation and reviewer responses. It connects the work to supporting sources so results can be checked and continued.
 
-Public snapshot: **2026-10-27**. Skill identifier: `research-craft`. Skill version: `1.3.1-rc.1`; workspace schema **1**. This includes the completed diagram, writing and context improvements; the candidate identifier is not a universal scientific-quality certification or a stable-release claim.
+Install **one Skill** and choose a capability through your request. Invoke `$research-craft` explicitly or describe the research task.
 
-## What you can do
+Skill version: `1.3.1-rc.1` (release candidate) · Research workspace schema: `1`
 
 ![Capability map](research-craft/docs/images/capability-map.png)
 
-| Task | Work performed | Deliverable |
-| --- | --- | --- |
-| Research questions and literature | Define the question; locate primary sources, conflicts and novelty boundaries | Source-grounded synthesis with explicit unknowns |
-| Experiments and data | Check units, denominators, split membership, seeds, thresholds and comparability; preserve adverse results | Data audit, competing explanations and a discriminating test plan |
-| Code and logs | Locate executed paths, configuration and actual failures | Specific diagnosis, minimal authorized patch and relevant regression evidence |
-| Model diagrams | Recover topology, choose architecture-specific visual language, compare layouts and inspect actual exports | Editable FigureSpec/SVG, topology contract and previews |
-| Scientific writing | Diagnose paragraph purpose and argument dependencies; make a minimal effective revision | Actual revised text, source checks and unresolved issues |
-| Translation and polishing | Preserve terminology, numbers, negation, conditions and claim strength | Faithful language revision; separate scientific correction proposals |
-| Reviewer response | Resolve every substantive concern against evidence and manuscript changes | Supplement plan, revised passages and formal response draft |
-| Context and recovery | Select relevant references, bound queries and keep recoverable source identities | Precise excerpts and the smallest sufficient research state |
+## Features and how to use them
 
-## Install and start
+Each guide lists the inputs, a copyable chat prompt and the expected output.
+
+| Capability | Typical use | Guide |
+| --- | --- | --- |
+| Research and literature | Compare methods, identify primary sources and examine a gap | [Literature](research-craft/docs/FEATURES.en.md#01-research-and-literature) |
+| Code and logs | Trace behavior, errors and configuration differences | [Code analysis](research-craft/docs/FEATURES.en.md#02-code-and-logs) |
+| Data and metrics | Check outliers, definitions and fair comparisons | [Data checks](research-craft/docs/FEATURES.en.md#03-data-and-metrics) |
+| Experiment planning | Select controls, ablations and useful follow-ups | [Planning](research-craft/docs/FEATURES.en.md#04-experiment-planning) |
+| Research records | Link issues, experiments, evidence, decisions and changes | [Record management](research-craft/docs/RECORDS.en.md) |
+| Model diagrams | Recover topology and make editable paper figures | [Diagram creation](research-craft/docs/FEATURES.en.md#05-model-diagrams) |
+| Scientific writing | Diagnose arguments and revise manuscript sections | [Writing](research-craft/docs/FEATURES.en.md#06-scientific-writing) |
+| Translation and editing | Improve language with scientific fidelity | [Language work](research-craft/docs/FEATURES.en.md#07-translation-and-editing) |
+| Reviewer responses | Map concerns to evidence, revisions and replies | [Revision](research-craft/docs/FEATURES.en.md#08-reviewer-responses) |
+| Research guidance | Turn feedback into actionable improvements | [Guidance](research-craft/docs/FEATURES.en.md#09-research-guidance) |
+| Resumable tasks | Preserve state and continue longer work | [Task recovery](research-craft/docs/FEATURES.en.md#10-resumable-tasks) |
+
+## Getting started
 
 ```bash
 git clone https://github.com/mingsong01/research-craft.git
 cd research-craft
 ```
 
-Copy the **inner research-craft/** folder into your research repository at `.agents/skills/research-craft/`. Personal installations use `$HOME/.agents/skills/research-craft/` under the current [official discovery conventions](https://learn.chatgpt.com/docs/build-skills). Older hosts may use another configured location. Check and back up an existing installation before copying; this repository does not install itself globally.
+Alternatively, use **Code → Download ZIP**. The root contains documentation; the inner **research-craft/** directory is the installable Skill. Copy that entire directory to `<your-project>/.agents/skills/research-craft/` or `$HOME/.agents/skills/research-craft/`. Preserve `SKILL.md` and its sibling directories. Back up or compare an existing installation first. Older hosts may use `.codex/skills`; follow your host's discovery location. See the [Codex Skills guide](https://learn.chatgpt.com/docs/build-skills).
 
-```text
-your-project/.agents/skills/research-craft/
-  SKILL.md
-  references/
-  scripts/
-  assets/
-  demo/
-  tests/
-  evals/
+Linux/macOS personal installation, from the repository root:
+
+```bash
+mkdir -p "$HOME/.agents/skills"
+test ! -e "$HOME/.agents/skills/research-craft" && \
+  cp -R ./research-craft "$HOME/.agents/skills/research-craft"
 ```
 
-Refresh skill discovery or start a new session. Invoke `$research-craft`, or name the Skill in a natural-language request:
+A Windows PowerShell example is in the [Chinese installation guide](research-craft/README.zh-CN.md#安装与开始使用). Reopen the session or refresh Skill discovery after copying.
+
+Use the following in **Codex chat**, replacing paths with your files:
 
 ```text
-Analyze these logs and metrics. Check split, seed, checkpoint and metric
-definitions first. Preserve failures and adverse findings. Analyze only;
-do not change code or start training.
-```
-
-```text
-Draw an editable architecture diagram from this model's actual forward path.
-Recover branches, skips, fusion and training-only connections. Do not invent
-unknown shapes. Compare two substantive layouts and inspect the 180 mm export.
+Use $research-craft to analyze logs/train.log and results/metrics.csv.
+Explain higher F1 and lower recall after checking the split, threshold
+and configuration. Return evidence-linked findings and useful next checks.
 ```
 
 ```text
-Revise this Introduction. Diagnose the gap, motivation and contribution chain.
-Return the actual revised English passage and specific reasons. Keep accurate
-sentences; do not invent citations, priority claims or experimental results.
+Use $research-craft to record this experiment. Capture the question,
+hypothesis, controls, configuration and result locations. Link the issue,
+experiment and evidence, update current state and generate the dashboard.
 ```
 
 ```text
-Address each reviewer concern using the complete original comment. Separate
-existing evidence, missing evidence, proposed supplements, manuscript revision
-and response. Never describe a proposed experiment as completed.
+Use $research-craft to diagram models/network.py for a 180 mm paper figure.
+Map actual topology, compare two layouts, and deliver editable SVG,
+a rendered preview and unresolved structure questions.
 ```
 
-## A lightweight workflow
+## Research records and experiment management
+
+The project's `.research/` directory stores open-format records for issues, experiments, evidence, decisions, changes and a chronological journal. Writing maps cover literature, searches, reviewer comments, figures and manuscript traceability. State captures current work, while a generated dashboard provides an overview.
+
+![Research records and experiment management](research-craft/docs/images/research-records.png)
+
+Experiment manifests can describe hypotheses, controls, datasets, splits, seeds, environment, commands, metrics, results, claim boundaries and limitations. Failed experiments remain useful records. Large data and checkpoints can stay in their original location with paths and file identities.
+
+See the [complete record guide](research-craft/docs/RECORDS.en.md) for creation, updates, queries, export and recovery.
+
+## Workflow
 
 ![Workflow](research-craft/docs/images/workflow-overview.png)
 
-QUICK work creates no research record by default. TRACKED work retains a small resumable state. FORMAL work traces consequential experiments, claims or reviewer decisions. Initialization is conditional on the task, not a side effect of activation.
-
-The helper initially creates only config, STATE and a generated dashboard. Registries, experiment details and writing maps are lazy. Registry/manifest records are authoritative; a dashboard is a view. Recording a plan does not prove an experiment ran or establish external preregistration.
-
-FACT, DERIVED, INTERPRETATION, HYPOTHESIS, PROPOSAL, DECISION and UNKNOWN remain distinct. A measured drop, its calculated magnitude and an explanation for the drop are different kinds of statements.
+QUICK suits one-off questions. TRACKED retains state for continued investigations. FORMAL links consequential experiments and manuscript decisions to plans and evidence. Records are created as needed; plans, completed work, observations and explanations retain distinct status.
 
 ## Model diagrams
 
-![Diagram pipeline](research-craft/docs/images/diagram-pipeline.png)
+![Diagram workflow](research-craft/docs/images/diagram-pipeline.png)
 
-Recover the documented or executed computation before choosing a composition. Preserve stable nodes, directed typed edges, skips, fusion, known shapes and training/inference conditions. A cleaner layout does not authorize changing scientific content.
+Start from computation or a method definition, then choose a composition. Encoder–Decoder figures emphasize scales and skips; Transformers emphasize tokens, attention and residuals; SSMs emphasize state and recurrence; multimodal figures distinguish sources and interactions. Complex figures compare layouts and review topology, information, aesthetics, final size and editability separately.
 
-Encoder–Decoder designs emphasize scales and aligned skips; Transformers emphasize tokens, attention roles and residuals; SSM designs emphasize recurrence and gating; multimodal diagrams distinguish sources, alignment and interaction. Feature volumes should convey known structure rather than decoration.
+### Examples and editable sources
 
-For complex figures, compare two genuinely different layouts. Accept topology, information, visual quality, final physical size and editability separately. Automated SVG checks screen structural/geometric issues; they cannot certify aesthetics. Render and inspect arrows, labels, gray-scale distinction, fonts and cropping at the intended size.
+The following **synthetic architectures** illustrate feature symbols, grouping and connection styles.
 
-### Actual repository examples
+![Synthetic multimodal architecture](research-craft/docs/images/example-multimodal.png)
 
-These are **synthetic architecture examples**, not independently verified implementations of a real trained model. Their original vector sources and contracts are included.
+[SVG](research-craft/demo/publication/multimodal-A/architecture.svg) · [FigureSpec](research-craft/demo/publication/multimodal-A/figure-spec.json) · [Topology](research-craft/demo/publication/multimodal-A/topology.json)
 
-![Synthetic multimodal example](research-craft/docs/images/example-multimodal.png)
+![Synthetic multiscale Encoder–Decoder](research-craft/docs/images/example-multiscale.png)
 
-[Editable SVG](research-craft/demo/publication/multimodal-A/architecture.svg) · [FigureSpec](research-craft/demo/publication/multimodal-A/figure-spec.json) · [Contract](research-craft/demo/publication/multimodal-A/topology.json)
+[SVG](research-craft/demo/publication/unet-multiscale/architecture.svg) · [FigureSpec](research-craft/demo/publication/unet-multiscale/figure-spec.json) · [Topology](research-craft/demo/publication/unet-multiscale/topology.json)
 
-![Synthetic multiscale example](research-craft/docs/images/example-multiscale.png)
+These layouts target 180 mm; 85 mm requires a separate readability review or layout. Real models require comparison with their code. [Known limits](research-craft/PUBLISHING_SNAPSHOT.md)
 
-[Editable SVG](research-craft/demo/publication/unet-multiscale/architecture.svg) · [FigureSpec](research-craft/demo/publication/unet-multiscale/figure-spec.json) · [Contract](research-craft/demo/publication/unet-multiscale/topology.json)
+## Writing, translation and reviewer revision
 
-The layouts target 180 mm. Direct scaling to 85 mm remains limited. Existing Bybit warnings are retained and require applicable explanations, not disabled rules. Real-code agreement, native-editor round trips, printing and cross-platform rendering require task-specific verification.
+![Writing workflow](research-craft/docs/images/writing-pipeline.png)
 
-## Scientific writing and reviewer revision
+Section-specific methods cover Abstract through Conclusion, including Related Work, Method, Experiments, Results, Discussion and Limitations. Revisions diagnose the argument, return usable prose and explain changes. Language editing preserves terminology, numbers, units, negation, conditions and claim strength. Scientific corrections are identified separately.
 
-![Writing pipeline](research-craft/docs/images/writing-pipeline.png)
+Reviewer work connects comments to concerns, evidence, supplementary work, manuscript changes and a formal reply. Completed and proposed work retain their actual status. See [feature-specific prompts](research-craft/docs/FEATURES.en.md).
 
-Guidance covers Abstract, Introduction, Related Work, Method, Experiments, Results, Discussion, Limitations and Conclusion. Diagnose the specific argument or paragraph function rather than impose fixed paragraph counts or stock phrases.
+## Context and longer tasks
 
-A revision should deliver the actual passage, explain the smallest effective repair and check its evidence. Method revisions preserve definitions, equations and validity conditions; results distinguish observations, explanations, mechanisms and limits. Good bounded prose may remain unchanged.
+![Progressive loading](research-craft/docs/images/context-efficiency.png)
 
-Language-only work must preserve scientific meaning. Keep numerical precision, units, negation, conditions, uncertainty and claim strength. If the source contains a scientific defect, provide a faithful language rendering and a separately identified correction proposal.
+Task-specific reading, bounded queries and streaming summaries reduce unrelated material. File identities and precise locations keep source details recoverable. Important numbers, formula conditions, complete comments and unfavorable findings remain part of the evidence. No general Token-saving percentage has been established.
 
-Conditional guidance distilled from research experience is not universal mentor authority. Unconfirmed speaker identity is not a verified quotation; a particular table order or appendix strategy is not an academic standard.
+## Requirements and quality
 
-The response chain is complete comment → core concern → technical requirement → existing evidence → gap → minimal discriminating supplement → manuscript change → response → version audit. Preserve partial or unresolved items and real manuscript locations. Do not invent completed experiments, citations or resolution.
+Use your existing Codex environment. Python helpers use the standard library with a documented target of 3.9+. Some SVG tools use Node.js; optional Chromium export recommends Node 22+. Figure rendering requires an available browser or PDF tool.
 
-## Context efficiency without evidence loss
+`SKILL.md` is the entry point; `references/` contains methods; `scripts/` contains helpers; `assets/` contains templates; `demo/` contains examples; `tests/` and `evals/` contain engineering tests and offline contracts.
 
-![Context efficiency](research-craft/docs/images/context-efficiency.png)
+The local check record includes **110 tests and 60 offline contracts**, plus fresh archive extraction. These cover implementation and contracts; scientific outputs still need evidence-based review. [Check details](research-craft/RELEASE_CHECKS.md) · [Compatibility](research-craft/PUBLISHING_SNAPSHOT.md)
 
-Use targeted references, HOT/WARM/COLD loading, bounded registry queries, streaming CSV summaries and exact source recovery. The helper supports same-stream SHA-256 identity, source ranges and raw extreme-value strings. A summary is not a substitute for sample membership, complete reviewer wording, formula conditions, adverse metrics or relevant failure traces.
+## Privacy, licensing and contributions
 
-No task-level percentage of Token savings is claimed. Tool-view byte reduction is not actual model input/output usage or complete task cost. Inspect unnecessary reads, verbose payloads, repeated calls and avoidable rework in real tasks, while preserving sufficient scientific detail.
+Records are stored locally; model instructions and tool outputs follow the host service's data policies. Check permissions for unpublished materials and use sanitized examples in Issues. [Data handling](research-craft/SECURITY.md)
 
-## Runtime and verification
+The original work does not yet have a project-wide license. Third-party components retain their own licenses and attribution. Read [license information](research-craft/LICENSE_STATUS.md) and [third-party notices](research-craft/THIRD_PARTY_NOTICES.md) before reuse or redistribution.
 
-Use an existing Codex account and available tools; no additional model API purchase, GPU, Docker, agent suite or permanent MCP is required. Python helpers use the standard library (documented target 3.9+). SVG lint/render work may need Node.js and an existing browser; Node 22+ is recommended for the optional Chromium export helper. Missing tools must be disclosed, not silently treated as completed checks.
-
-The current engineering record is 110 unit tests and 60 offline contracts. The public archive is also checked after fresh extraction. See [snapshot scope](research-craft/PUBLISHING_SNAPSHOT.md). Historical model evaluation describes its frozen version only and is not a new evaluation of this snapshot.
-
-## Privacy, licensing and contribution
-
-Local-first records do not mean offline model inference. The host's model service may process instructions and tool outputs. Keep unpublished research, correspondence, credentials, private corpora and raw model logs out of public Issues and repositories.
-
-The original-work license remains deferred by the publisher. Public visibility does not make all original work MIT-licensed; retained third-party licenses apply to their respective components. Read [license status](research-craft/LICENSE_STATUS.md) and [third-party notices](research-craft/THIRD_PARTY_NOTICES.md). No upstream endorsement is implied.
-
-Contributions should identify a concrete defect with a lawful, sanitized minimal example, expected/actual behavior and relevant source/artifact checks. Improve an actual task rather than add unnecessary process. This Skill does not promise universal paper reproduction, publication acceptance, top-journal aesthetics, advisor-level judgment or independent quality certification.
-
-
-[Local build checks](verification/local-checks.json)
+Feedback is welcome. Include the task, sanitized input, expected behavior and actual result so the problem can be reproduced.

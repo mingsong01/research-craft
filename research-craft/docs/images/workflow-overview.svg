@@ -4,7 +4,7 @@
 <rect width="1600" height="790" rx="0" fill="url(#bg)"/>
 <rect width="1600" height="790" fill="url(#grid)" opacity="0.28"/>
 <text x="64" y="44" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="600" fill="#607C96" text-anchor="start" letter-spacing="2.3">WORKFLOW OVERVIEW</text>
-<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">选择必要步骤，不制造多余流程</text>
+<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">从科研问题，到可追溯的研究成果</text>
 <text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">Scope → locate evidence → produce → verify → deliver</text>
 <path d="M64 176L1536 176" fill="none" stroke="#CEE2F0" stroke-width="1.5"/>
 <rect x="64" y="220" width="264" height="374" rx="20" fill="url(#glass)" stroke="#CCDFED" stroke-width="1.2"/>
@@ -13,8 +13,8 @@
 <text x="88" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">明确任务</text>
 <text x="89" y="420" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#607C96" text-anchor="start">Scope</text>
 <text x="88" y="469" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">材料与目标</text>
-<text x="88" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">分析 / 修改权限</text>
-<text x="88" y="541" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">需要怎样的成果</text>
+<text x="88" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">分析 / 修改范围</text>
+<text x="88" y="541" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">预期的成果形式</text>
 <path d="M336 399L356 399" fill="none" stroke="#02BBD2" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="366" y="220" width="264" height="374" rx="20" fill="url(#glass)" stroke="#CCDFED" stroke-width="1.2"/>
 <text x="387" y="254" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#2369EE" text-anchor="start">02</text>
@@ -28,16 +28,16 @@
 <rect x="668" y="220" width="264" height="374" rx="20" fill="url(#glass)" stroke="#CCDFED" stroke-width="1.2"/>
 <text x="689" y="254" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#2369EE" text-anchor="start">03</text>
 <g transform="translate(694 279) scale(0.9)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20L34 4L63 20L34 36ZM5 33L34 49L63 33M5 46L34 62L63 46"/></g>
-<text x="692" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">完成核心工作</text>
+<text x="692" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">分析与制作</text>
 <text x="693" y="420" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#607C96" text-anchor="start">Produce</text>
-<text x="692" y="469" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">分析或最小修复</text>
-<text x="692" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">模型图与实际改文</text>
+<text x="692" y="469" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">分析 / 实验记录</text>
+<text x="692" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">模型图与论文改稿</text>
 <text x="692" y="541" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">保留源与修改理由</text>
 <path d="M940 399L960 399" fill="none" stroke="#02BBD2" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="970" y="220" width="264" height="374" rx="20" fill="url(#glass)" stroke="#CCDFED" stroke-width="1.2"/>
 <text x="991" y="254" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#2369EE" text-anchor="start">04</text>
 <g transform="translate(996 279) scale(0.9)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M34 4L57 14V34Q54 51 34 62Q14 51 11 34V14ZM22 31L30 39L47 22"/></g>
-<text x="994" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">检查真实产物</text>
+<text x="994" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">检查结果</text>
 <text x="995" y="420" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#607C96" text-anchor="start">Verify</text>
 <text x="994" y="469" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">科学正确与一致性</text>
 <text x="994" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">实际渲染 / 数值核对</text>
@@ -46,11 +46,11 @@
 <rect x="1272" y="220" width="264" height="374" rx="20" fill="url(#glass)" stroke="#CCDFED" stroke-width="1.2"/>
 <text x="1293" y="254" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#2369EE" text-anchor="start">05</text>
 <g transform="translate(1298 279) scale(0.9)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4H43L56 17V61H15ZM43 4V18H56M24 29H46M24 39H46M24 49H39"/></g>
-<text x="1296" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">交付并停止</text>
+<text x="1296" y="389" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">整理研究成果</text>
 <text x="1297" y="420" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#607C96" text-anchor="start">Deliver</text>
 <text x="1296" y="469" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">可编辑文件 / 改稿</text>
 <text x="1296" y="505" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">结论与回源位置</text>
-<text x="1296" y="541" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">没有新缺陷就停止</text>
+<text x="1296" y="541" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#294562" text-anchor="start">未决问题和后续建议</text>
 <rect x="64" y="646" width="425" height="36" rx="18" fill="#EDF5FF" stroke="none" stroke-width="1.2"/>
 <text x="276.5" y="670" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">QUICK · 一次性任务不默认建记录</text>
 <rect x="508" y="646" width="480" height="36" rx="18" fill="#EDF5FF" stroke="none" stroke-width="1.2"/>
@@ -58,5 +58,5 @@
 <rect x="1008" y="646" width="528" height="36" rx="18" fill="#EDF5FF" stroke="none" stroke-width="1.2"/>
 <text x="1272.0" y="670" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">FORMAL · 重要主张保留完整证据链</text>
 <text x="64" y="755" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
-<text x="1536" y="755" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">按任务选择必要步骤；记录不等于实验已执行</text>
+<text x="1536" y="755" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">按任务选择工作方式，保留清晰的证据链</text>
 </svg>

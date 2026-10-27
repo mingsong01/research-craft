@@ -30,7 +30,7 @@
 <text x="1221" y="509" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">行、页或记录定位</text>
 <text x="1221" y="552" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">范围与遗漏说明</text>
 <rect x="64" y="682" width="1472" height="168" rx="20" fill="#F1F8FD" stroke="#D1E4EF" stroke-width="1.2"/>
-<text x="93" y="728" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#0B1C38" text-anchor="start">压缩可以有边界，科学证据不能丢。</text>
+<text x="93" y="728" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#0B1C38" text-anchor="start">按需读取上下文，完整保留科学依据。</text>
 <rect x="94" y="765" width="210" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
 <text x="199.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">数字与有效位</text>
 <rect x="324" y="765" width="200" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
@@ -42,5 +42,5 @@
 <rect x="1024" y="765" width="230" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
 <text x="1139.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">不利结果与失败</text>
 <text x="64" y="930" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
-<text x="1536" y="930" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">No claimed Token-saving percentage · actual task quality comes first</text>
+<text x="1536" y="930" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">Focused context · recoverable evidence · efficient research</text>
 </svg>

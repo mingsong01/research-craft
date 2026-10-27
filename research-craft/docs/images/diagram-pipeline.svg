@@ -4,8 +4,8 @@
 <rect width="1700" height="950" rx="0" fill="url(#bg)"/>
 <rect width="1700" height="950" fill="url(#grid)" opacity="0.28"/>
 <text x="64" y="44" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="600" fill="#607C96" text-anchor="start" letter-spacing="2.3">MODEL DIAGRAM PIPELINE</text>
-<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">模型图从真实结构开始，以实际成品验收</text>
-<text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">Scientific topology and visual design are separate responsibilities.</text>
+<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">从模型结构，到清晰、可编辑的科研图</text>
+<text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">From model evidence to an editable figure and a readable final layout.</text>
 <path d="M64 176L1636 176" fill="none" stroke="#CEE2F0" stroke-width="1.5"/>
 <rect x="64" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
 <circle cx="100" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
@@ -77,7 +77,7 @@
 <rect x="1318" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
 <text x="1339" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">可编辑性</text>
 <text x="1339" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Editability</text>
-<text x="850" y="876" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="600" fill="#294562" text-anchor="middle">不编造维度或内部模块；不以 SVG PASS 代替实际看图。</text>
+<text x="850" y="876" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="600" fill="#294562" text-anchor="middle">结构有依据，特征有含义，图稿适配实际论文尺寸。</text>
 <text x="64" y="915" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
-<text x="1636" y="915" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">Illustrated workflow · a publication target, not a quality guarantee</text>
+<text x="1636" y="915" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">Model evidence · editable vectors · final-size review</text>
 </svg>

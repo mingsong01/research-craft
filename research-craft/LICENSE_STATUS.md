@@ -1,7 +1,7 @@
-# License status / 许可状态
+# License information / 许可说明
 
-The publisher has deferred selection of a license for the original ResearchCraft work. No project-wide MIT, Apache or other open-source license has been selected by this publication process. Public visibility is not a grant of a project-wide open-source license.
+ResearchCraft's original work does not yet have a project-wide license. Please check this file for licensing updates before reuse or redistribution of the original code, documentation or artwork.
 
-原创部分许可证仍待作者决定，本次发布不代作者选择。第三方内容沿用各自随附许可及署名，不覆盖全部原创工作。
+ResearchCraft 原创代码、文档和插图尚未指定项目级许可证。使用与再分发前，请查看本页的许可状态及后续更新。
 
-See THIRD_PARTY_NOTICES.md, licenses/ and the license/provenance records beside scripts/vendor/. Do not remove their copyright notices or imply upstream endorsement. Original documentation illustrations were authored for this snapshot as editable SVG and locally rendered PNG; reference pictures supplied during preparation are not redistributed.
+Third-party components retain their respective licenses and attribution. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [licenses/](licenses/) and the license/provenance files under [scripts/vendor/](scripts/vendor/). Their terms apply to the associated components rather than automatically to the entire project.

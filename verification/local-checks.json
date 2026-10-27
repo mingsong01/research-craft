@@ -1,0 +1,122 @@
+{
+  "snapshot": "2026-10-27",
+  "skill": "research-craft",
+  "skill_version": "1.3.1-rc.1",
+  "workspace_schema": 1,
+  "status": "PASS",
+  "scope": "Core Skill archive and fresh extraction; offline engineering checks, not model-quality certification.",
+  "core_archive": {
+    "sha256": "3807bb88844fcd4eecd21342d9264a732411cdb94ce8ac0865f0e3f3138f8719",
+    "files": 142,
+    "bytes": 7014913
+  },
+  "core_archive_filename": "research-craft-skill-20261027.zip",
+  "unit_tests": 110,
+  "offline_contracts": 60,
+  "commands_from_skill_directory": [
+    "python -B -m unittest discover -s tests -v",
+    "python -B evals/run_evals.py",
+    "python -B demo/run_demo.py"
+  ],
+  "checks": {
+    "public_static_scan": {
+      "status": "PASS",
+      "scope": "Common credentials and personal identifiers/paths; not exhaustive"
+    },
+    "unit_tests": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "offline_contracts": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "isolated_demo": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "official_validator": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "archive_unit_tests": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "archive_offline_contracts": {
+      "status": "PASS",
+      "returncode": 0
+    },
+    "archive_isolated_demo": {
+      "status": "PASS",
+      "returncode": 0
+    }
+  },
+  "scientific_source_unchanged": true,
+  "existing_documentation_changes": [
+    "EVALUATION_SUMMARY.md",
+    "README.md",
+    "README.zh-CN.md",
+    "RELEASE_CHECKS.md"
+  ],
+  "original_explanatory_illustrations": 6,
+  "unchanged_synthetic_example_previews": 2,
+  "actual_local_rendering": "Existing Chromium/Edge; eight PNG previews inspected, editable SVG preserved.",
+  "render_clipping_report": [
+    {
+      "image": "hero-banner",
+      "text_count": 19,
+      "clipping": [],
+      "png_bytes": 1489787
+    },
+    {
+      "image": "capability-map",
+      "text_count": 30,
+      "clipping": [],
+      "png_bytes": 1121496
+    },
+    {
+      "image": "workflow-overview",
+      "text_count": 38,
+      "clipping": [],
+      "png_bytes": 973238
+    },
+    {
+      "image": "diagram-pipeline",
+      "text_count": 47,
+      "clipping": [],
+      "png_bytes": 927682
+    },
+    {
+      "image": "writing-pipeline",
+      "text_count": 37,
+      "clipping": [],
+      "png_bytes": 1150724
+    },
+    {
+      "image": "context-efficiency",
+      "text_count": 25,
+      "clipping": [],
+      "png_bytes": 917921
+    },
+    {
+      "image": "example-multimodal",
+      "text_count": 25,
+      "clipping": [],
+      "png_bytes": 122113
+    },
+    {
+      "image": "example-multiscale",
+      "text_count": 19,
+      "clipping": [],
+      "png_bytes": 131690
+    }
+  ],
+  "limitations": [
+    "No new model A/B or independent scientific/aesthetic certification.",
+    "No measured task-level Token-saving percentage.",
+    "Synthetic model examples do not verify real model implementations.",
+    "Known 85 mm, profile-warning, attribution and cross-platform limits retained."
+  ],
+  "additional_paid_model_or_image_api_calls": 0
+}

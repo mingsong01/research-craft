@@ -1,0 +1,391 @@
+{
+  "canvas": {
+    "width": 1370,
+    "height": 660
+  },
+  "style": {
+    "font_size": 24,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "palette": [
+      "#39485D",
+      "#4777AA",
+      "#318B80",
+      "#B7673B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "input",
+      "label": "Paired\ninput",
+      "x": 110,
+      "y": 310,
+      "width": 170,
+      "height": 150,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "image + text"
+    },
+    {
+      "id": "image_encoder",
+      "label": "Image encoder",
+      "x": 360,
+      "y": 200,
+      "width": 240,
+      "height": 144,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "multiscale",
+      "representation": "feature-map",
+      "representation_style": "semantic",
+      "role": "encoder"
+    },
+    {
+      "id": "text_encoder",
+      "label": "Text encoder",
+      "x": 360,
+      "y": 420,
+      "width": 240,
+      "height": 144,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "tokens",
+      "representation": "tokens",
+      "representation_style": "semantic",
+      "role": "encoder"
+    },
+    {
+      "id": "fusion",
+      "label": "Scale-aware\nfusion",
+      "x": 625,
+      "y": 310,
+      "width": 170,
+      "height": 128,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "role": "fusion"
+    },
+    {
+      "id": "novel",
+      "label": "Cross-modal\nrefinement",
+      "x": 875,
+      "y": 310,
+      "width": 230,
+      "height": 160,
+      "stroke": "#B7673B",
+      "fill": "#FBEFE5",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "header": "Proposed module",
+      "role": "attention"
+    },
+    {
+      "id": "head",
+      "label": "Prediction\nhead",
+      "x": 1110,
+      "y": 310,
+      "width": 150,
+      "height": 110,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "x": 1280,
+      "y": 310,
+      "width": 110,
+      "height": 100,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "role": "output"
+    },
+    {
+      "id": "aux_loss",
+      "label": "Alignment loss",
+      "x": 875,
+      "y": 500,
+      "width": 210,
+      "height": 112,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "training only",
+      "role": "auxiliary",
+      "execution": "training-only"
+    }
+  ],
+  "edges": [
+    {
+      "from": "input",
+      "to": "image_encoder",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          205,
+          272.5
+        ],
+        [
+          205,
+          200
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.25
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-1"
+    },
+    {
+      "from": "input",
+      "to": "text_encoder",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          205,
+          347.5
+        ],
+        [
+          205,
+          420
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.75
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-2"
+    },
+    {
+      "from": "image_encoder",
+      "to": "fusion",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          505,
+          200
+        ],
+        [
+          505,
+          278
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.25
+      },
+      "id": "edge-3"
+    },
+    {
+      "from": "text_encoder",
+      "to": "fusion",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          505,
+          420
+        ],
+        [
+          505,
+          342
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.75
+      },
+      "id": "edge-4"
+    },
+    {
+      "from": "fusion",
+      "to": "novel",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-5"
+    },
+    {
+      "from": "novel",
+      "to": "head",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-6"
+    },
+    {
+      "from": "head",
+      "to": "output",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-7"
+    },
+    {
+      "from": "novel",
+      "to": "aux_loss",
+      "type": "training-only",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "style": "dotted",
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-8"
+    },
+    {
+      "from": "image_encoder",
+      "to": "novel",
+      "type": "skip",
+      "thickness": 2.4,
+      "color": "#4777AA",
+      "style": "dashed",
+      "label": "image detail skip · bypasses fusion",
+      "label_segment": "longest-horizontal",
+      "waypoints": [
+        [
+          360,
+          100
+        ],
+        [
+          875,
+          100
+        ]
+      ],
+      "source_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-9"
+    }
+  ],
+  "labels": [
+    {
+      "text": "01   Modality encoding",
+      "x": 230,
+      "y": 40,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "02   Joint reasoning",
+      "x": 540,
+      "y": 40,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "03   Prediction",
+      "x": 1035,
+      "y": 40,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Main feature flow",
+      "x": 71,
+      "y": 590,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start",
+      "line_style": "solid"
+    },
+    {
+      "text": "Image-detail skip",
+      "x": 420,
+      "y": 590,
+      "font_size": 21,
+      "color": "#4777AA",
+      "anchor": "start",
+      "line_style": "dashed"
+    },
+    {
+      "text": "Training only",
+      "x": 780,
+      "y": 590,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start",
+      "line_style": "dotted"
+    },
+    {
+      "text": "Symbolic feature glyphs; dimensions and module internals unspecified.",
+      "x": 25,
+      "y": 627,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start"
+    }
+  ]
+}

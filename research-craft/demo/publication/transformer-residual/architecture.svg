@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1410 585" width="1410" height="585" font-family="Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'">
+  <style>text { font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'; }</style>
+  <rect x="0" y="0" width="1410" height="585" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#39485D"/>
+    </marker>
+    <marker id="arrow-c1-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#4777AA"/>
+    </marker>
+    <marker id="arrow-c2-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#318B80"/>
+    </marker>
+    <marker id="arrow-c3-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#B7673B"/>
+    </marker>
+  </defs>
+  <path d="M 185.0,280.0 L 231.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="tokens" data-target="norm1" data-edge-type="main" data-edge-id="edge-1" data-train-only="false"/>
+  <path d="M 370.0,280.0 L 406.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="norm1" data-target="attn" data-edge-type="main" data-edge-id="edge-2" data-train-only="false"/>
+  <path d="M 685.0,280.0 L 726.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="attn" data-target="add1" data-edge-type="main" data-edge-id="edge-3" data-train-only="false"/>
+  <path d="M 110.0,185.0 L 110.0,100.0 L 770.0,100.0 L 770.0,236.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="tokens" data-target="add1" data-edge-type="residual" data-edge-id="edge-4" data-train-only="false"/>
+  <text x="440.0" y="82.8" font-size="24" fill="#555555" text-anchor="middle" data-edge-label="edge-4">identity residual</text>
+  <path d="M 805.0,280.0 L 866.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="add1" data-target="norm2" data-edge-type="main" data-edge-id="edge-5" data-train-only="false"/>
+  <path d="M 1005.0,280.0 L 1036.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="norm2" data-target="mlp" data-edge-type="main" data-edge-id="edge-6" data-train-only="false"/>
+  <path d="M 1215.0,280.0 L 1291.0,280.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="mlp" data-target="add2" data-edge-type="main" data-edge-id="edge-7" data-train-only="false"/>
+  <path d="M 770.0,315.0 L 770.0,440.0 L 1335.0,440.0 L 1335.0,324.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="add1" data-target="add2" data-edge-type="residual" data-edge-id="edge-8" data-train-only="false"/>
+  <text x="1052.5" y="422.8" font-size="24" fill="#555555" text-anchor="middle" data-edge-label="edge-8">identity residual</text>
+  <g data-node-id="tokens" data-role="generic" data-execution="both">
+    <rect x="40.0" y="190.0" width="140.0" height="180.0" fill="#EAF1F8" stroke="#4777AA" stroke-width="2" rx="8"/>
+    <g data-decoration="tokens" aria-label="symbolic representation; counts are not dimensions">
+      <path d="M62.8,206.2 h14.9 v37.8 h-14.9 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M81.7,206.2 h14.9 v37.8 h-14.9 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M100.5,206.2 h14.9 v37.8 h-14.9 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M119.4,206.2 h14.9 v37.8 h-14.9 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M138.3,206.2 h14.9 v37.8 h-14.9 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+    </g>
+    <text x="110.0" y="325.9" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">Tokens</text>
+  </g>
+  <g data-node-id="norm1" data-role="generic" data-execution="both" data-operation="norm">
+    <rect x="245.0" y="230.0" width="120.0" height="100.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="305.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">Norm</text>
+  </g>
+  <g data-node-id="attn" data-role="generic" data-execution="both" data-operation="self-attention">
+    <rect x="420.0" y="200.0" width="260.0" height="160.0" fill="#FBEFE5" stroke="#B7673B" stroke-width="2" rx="8"/>
+    <path d="M428.0,212.0 V348.0" fill="none" stroke="#B7673B" stroke-width="5" data-decoration="emphasis"/>
+    <text x="550.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">Self-attention</text>
+  </g>
+  <g data-node-id="add1" data-role="generic" data-execution="both" data-operation="add">
+    <circle cx="770.0" cy="280.0" r="30.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2"/>
+    <text x="770.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">+</text>
+  </g>
+  <g data-node-id="norm2" data-role="generic" data-execution="both" data-operation="norm">
+    <rect x="880.0" y="230.0" width="120.0" height="100.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="940.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">Norm</text>
+  </g>
+  <g data-node-id="mlp" data-role="generic" data-execution="both" data-operation="mlp">
+    <rect x="1050.0" y="220.0" width="160.0" height="120.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2" rx="8"/>
+    <text x="1130.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">MLP</text>
+  </g>
+  <g data-node-id="add2" data-role="generic" data-execution="both" data-operation="add">
+    <circle cx="1335.0" cy="280.0" r="30.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2"/>
+    <text x="1335.0" y="289.4" font-size="27" fill="#253348" text-anchor="middle" font-weight="bold">+</text>
+  </g>
+  <text x="40.0" y="45.0" font-size="27" fill="#39485D" text-anchor="start">PRE-NORM RESIDUAL BLOCK</text>
+  <text x="40.0" y="515.0" font-size="24" fill="#39485D" text-anchor="start">+: elementwise addition. Residuals enter separate ports; no training-only path is shown.</text>
+  <text x="40.0" y="550.0" font-size="24" fill="#39485D" text-anchor="start">Synthetic illustrative block; no model-specific head count, depth or dimensions are asserted.</text>
+</svg>

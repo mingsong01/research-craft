@@ -1,0 +1,5 @@
+source: https://github.com/OpenGHz/academic-human-in-the-loop
+commit: a15ffd191515c19faad9310ae5f41c0cb1f6beda
+upstream_sha256: 02B4E01E46B51AECA12722DDD7B21BB7DA3C3B175BBA5D129C45D671FB07A0BC
+local_changes: topology metadata, waypoint routing, visible-boundary arrow clearance; unreleased stage-01 fixes for painted marker extent, routed labels, explicit training semantics, semantic node metadata, finite input checks and portable font declarations; unreleased diagram-design additions for validated side ports, horizontal label anchors, editable symbolic representations, focal emphasis and feature-volume silhouettes with exact clipping
+closeout_changes: opt-in semantic glyphs, validated plain-module role headers and editable legend line samples; defaults and scientific topology metadata preserved

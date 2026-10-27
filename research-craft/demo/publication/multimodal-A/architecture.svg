@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1370 660" width="1370" height="660" font-family="Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'">
+  <style>text { font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'; }</style>
+  <rect x="0" y="0" width="1370" height="660" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#39485D"/>
+    </marker>
+    <marker id="arrow-c1-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#4777AA"/>
+    </marker>
+    <marker id="arrow-c2-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#318B80"/>
+    </marker>
+    <marker id="arrow-c3-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#B7673B"/>
+    </marker>
+  </defs>
+  <path d="M 200.0,272.5 L 205.0,272.5 L 205.0,200.0 L 226.0,200.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="input" data-target="image_encoder" data-edge-type="main" data-edge-id="edge-1" data-train-only="false"/>
+  <path d="M 200.0,347.5 L 205.0,347.5 L 205.0,420.0 L 226.0,420.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="input" data-target="text_encoder" data-edge-type="main" data-edge-id="edge-2" data-train-only="false"/>
+  <path d="M 485.0,200.0 L 505.0,200.0 L 505.0,278.0 L 526.0,278.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="image_encoder" data-target="fusion" data-edge-type="main" data-edge-id="edge-3" data-train-only="false"/>
+  <path d="M 485.0,420.0 L 505.0,420.0 L 505.0,342.0 L 526.0,342.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="text_encoder" data-target="fusion" data-edge-type="main" data-edge-id="edge-4" data-train-only="false"/>
+  <path d="M 715.0,310.0 L 746.0,310.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="fusion" data-target="novel" data-edge-type="main" data-edge-id="edge-5" data-train-only="false"/>
+  <path d="M 995.0,310.0 L 1021.0,310.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="novel" data-target="head" data-edge-type="main" data-edge-id="edge-6" data-train-only="false"/>
+  <path d="M 1190.0,310.0 L 1211.0,310.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="head" data-target="output" data-edge-type="main" data-edge-id="edge-7" data-train-only="false"/>
+  <path d="M 875.0,395.0 L 875.0,430.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="novel" data-target="aux_loss" data-edge-type="training-only" data-edge-id="edge-8" data-train-only="true" stroke-dasharray="3,3"/>
+  <path d="M 360.0,123.0 L 360.0,100.0 L 875.0,100.0 L 875.0,216.0" stroke="#4777AA" stroke-width="2.4" fill="none" marker-end="url(#arrow-c1-12)" data-source="image_encoder" data-target="novel" data-edge-type="skip" data-edge-id="edge-9" data-train-only="false" stroke-dasharray="8,4"/>
+  <text x="617.5" y="83.7" font-size="21" fill="#555555" text-anchor="middle" data-edge-label="edge-9">image detail skip · bypasses fusion</text>
+  <g data-node-id="input" data-role="generic" data-execution="both">
+    <rect x="25.0" y="235.0" width="170.0" height="150.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="110.0" y="282.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Paired</text>
+    <text x="110.0" y="318.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">input</text>
+    <text x="110.0" y="354.4" font-size="21" fill="#555555" text-anchor="middle">image + text</text>
+  </g>
+  <g data-node-id="image_encoder" data-role="encoder" data-execution="both">
+    <rect x="240.0" y="128.0" width="240.0" height="144.0" fill="#EAF1F8" stroke="#4777AA" stroke-width="2" rx="8"/>
+    <g data-decoration="feature-map" aria-label="symbolic representation; counts are not dimensions">
+      <path d="M348.2,142.4 h53.8 v22.8 h-53.8 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.9"/>
+      <path d="M333.1,147.8 h53.8 v22.8 h-53.8 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.9"/>
+      <path d="M318.0,153.2 h53.8 v22.8 h-53.8 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.9"/>
+      <path d="M335.9,153.2 v22.8 M353.8,153.2 v22.8 M318.0,164.6 h53.8" fill="none" stroke="#4777AA" stroke-width="1.5"/>
+    </g>
+    <text x="360.0" y="216.8" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Image encoder</text>
+    <text x="360.0" y="252.8" font-size="21" fill="#555555" text-anchor="middle">multiscale</text>
+  </g>
+  <g data-node-id="text_encoder" data-role="encoder" data-execution="both">
+    <rect x="240.0" y="348.0" width="240.0" height="144.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2" rx="8"/>
+    <g data-decoration="tokens" aria-label="symbolic representation; counts are not dimensions">
+      <path d="M318.0,362.4 h31.9 v14.1 h-31.9 Z" fill="#E9F4F1" stroke="#318B80" stroke-width="1.9"/>
+      <path d="M322.0,369.5 h23.9" fill="none" stroke="#318B80" stroke-width="1.5"/>
+      <path d="M355.8,362.4 h46.2 v14.1 h-46.2 Z" fill="#E9F4F1" stroke="#318B80" stroke-width="1.9"/>
+      <path d="M359.8,369.5 h38.2" fill="none" stroke="#318B80" stroke-width="1.5"/>
+      <path d="M331.4,381.6 h57.1 v14.1 h-57.1 Z" fill="#E9F4F1" stroke="#318B80" stroke-width="1.9"/>
+      <path d="M335.4,388.6 h49.1" fill="none" stroke="#318B80" stroke-width="1.5"/>
+    </g>
+    <text x="360.0" y="436.8" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Text encoder</text>
+    <text x="360.0" y="472.8" font-size="21" fill="#555555" text-anchor="middle">tokens</text>
+  </g>
+  <g data-node-id="fusion" data-role="fusion" data-execution="both">
+    <rect x="540.0" y="246.0" width="170.0" height="128.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="625.0" y="300.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Scale-aware</text>
+    <text x="625.0" y="336.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">fusion</text>
+  </g>
+  <g data-node-id="novel" data-role="attention" data-execution="both">
+    <rect x="760.0" y="230.0" width="230.0" height="160.0" fill="#FBEFE5" stroke="#B7673B" stroke-width="2" rx="8"/>
+    <text x="875.0" y="252.8" font-size="21" fill="#253348" text-anchor="middle" font-weight="bold" data-decoration="module-header">Proposed module</text>
+    <path d="M776.0,269.6 H974.0" fill="none" stroke="#B7673B" stroke-width="1.5" data-decoration="header-divider"/>
+    <text x="875.0" y="325.6" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Cross-modal</text>
+    <text x="875.0" y="361.6" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">refinement</text>
+  </g>
+  <g data-node-id="head" data-role="generic" data-execution="both">
+    <rect x="1035.0" y="255.0" width="150.0" height="110.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="1110.0" y="300.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Prediction</text>
+    <text x="1110.0" y="336.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">head</text>
+  </g>
+  <g data-node-id="output" data-role="output" data-execution="both">
+    <rect x="1225.0" y="260.0" width="110.0" height="100.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="1280.0" y="318.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Output</text>
+  </g>
+  <g data-node-id="aux_loss" data-role="auxiliary" data-execution="training-only">
+    <rect x="770.0" y="444.0" width="210.0" height="112.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="875.0" y="490.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Alignment loss</text>
+    <text x="875.0" y="526.4" font-size="21" fill="#555555" text-anchor="middle">training only</text>
+  </g>
+  <text x="230.0" y="40.0" font-size="24" fill="#39485D" text-anchor="start">01   Modality encoding</text>
+  <text x="540.0" y="40.0" font-size="24" fill="#39485D" text-anchor="start">02   Joint reasoning</text>
+  <text x="1035.0" y="40.0" font-size="24" fill="#39485D" text-anchor="start">03   Prediction</text>
+  <path d="M25.0,583.7 H59.0" fill="none" stroke="#39485D" stroke-width="2.4" data-decoration="legend-sample"/>
+  <text x="71.0" y="590.0" font-size="21" fill="#39485D" text-anchor="start">Main feature flow</text>
+  <path d="M374.0,583.7 H408.0" fill="none" stroke="#4777AA" stroke-width="2.4" data-decoration="legend-sample" stroke-dasharray="8,4"/>
+  <text x="420.0" y="590.0" font-size="21" fill="#4777AA" text-anchor="start">Image-detail skip</text>
+  <path d="M734.0,583.7 H768.0" fill="none" stroke="#39485D" stroke-width="2.4" data-decoration="legend-sample" stroke-dasharray="3,3"/>
+  <text x="780.0" y="590.0" font-size="21" fill="#39485D" text-anchor="start">Training only</text>
+  <text x="25.0" y="627.0" font-size="21" fill="#39485D" text-anchor="start">Symbolic feature glyphs; dimensions and module internals unspecified.</text>
+</svg>

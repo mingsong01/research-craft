@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "id": "e0",
+      "operation": "conv",
+      "tensor_shape": "H x W"
+    },
+    {
+      "id": "e1",
+      "operation": "down-conv",
+      "tensor_shape": "H/2 x W/2"
+    },
+    {
+      "id": "b",
+      "operation": "bottleneck",
+      "tensor_shape": "H/4 x W/4"
+    },
+    {
+      "id": "c1",
+      "operation": "concat"
+    },
+    {
+      "id": "d1",
+      "operation": "decode",
+      "tensor_shape": "H/2 x W/2"
+    },
+    {
+      "id": "c0",
+      "operation": "concat"
+    },
+    {
+      "id": "d0",
+      "operation": "decode",
+      "tensor_shape": "H x W"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "e0",
+      "target": "e1",
+      "type": "main"
+    },
+    {
+      "id": "edge-2",
+      "source": "e1",
+      "target": "b",
+      "type": "main"
+    },
+    {
+      "id": "edge-3",
+      "source": "b",
+      "target": "c1",
+      "type": "main"
+    },
+    {
+      "id": "edge-4",
+      "source": "e1",
+      "target": "c1",
+      "type": "skip"
+    },
+    {
+      "id": "edge-5",
+      "source": "c1",
+      "target": "d1",
+      "type": "main"
+    },
+    {
+      "id": "edge-6",
+      "source": "d1",
+      "target": "c0",
+      "type": "main"
+    },
+    {
+      "id": "edge-7",
+      "source": "e0",
+      "target": "c0",
+      "type": "skip"
+    },
+    {
+      "id": "edge-8",
+      "source": "c0",
+      "target": "d0",
+      "type": "main"
+    }
+  ]
+}

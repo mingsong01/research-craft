@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "x"
+    },
+    {
+      "id": "local",
+      "operation": "local-mix"
+    },
+    {
+      "id": "scan",
+      "operation": "forward-ssm"
+    },
+    {
+      "id": "gate",
+      "operation": "gate"
+    },
+    {
+      "id": "mul",
+      "operation": "multiply"
+    },
+    {
+      "id": "proj",
+      "operation": "projection"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "x",
+      "target": "local",
+      "type": "main"
+    },
+    {
+      "id": "edge-2",
+      "source": "local",
+      "target": "scan",
+      "type": "main"
+    },
+    {
+      "id": "edge-3",
+      "source": "scan",
+      "target": "mul",
+      "type": "main"
+    },
+    {
+      "id": "edge-4",
+      "source": "x",
+      "target": "gate",
+      "type": "main"
+    },
+    {
+      "id": "edge-5",
+      "source": "gate",
+      "target": "mul",
+      "type": "main"
+    },
+    {
+      "id": "edge-6",
+      "source": "mul",
+      "target": "proj",
+      "type": "main"
+    }
+  ]
+}

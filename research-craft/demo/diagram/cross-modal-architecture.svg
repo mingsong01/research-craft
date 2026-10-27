@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1165 585" width="1165" height="585" font-family="Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'">
+  <style>text { font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'; }</style>
+  <rect x="0" y="0" width="1165" height="585" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#0072B2"/>
+    </marker>
+    <marker id="arrow-c1-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#009E73"/>
+    </marker>
+    <marker id="arrow-c2-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#7B61A8"/>
+    </marker>
+    <marker id="arrow-c3-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#E69F00"/>
+    </marker>
+    <marker id="arrow-c4-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#D55E00"/>
+    </marker>
+  </defs>
+  <rect x="191.0" y="84.0" width="218.0" height="382.0" fill="#F7FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="199.0" y="100.0" font-size="18.5" fill="#555555" font-weight="bold">Modal encoders</text>
+  <rect x="435.0" y="188.0" width="419.0" height="174.0" fill="#FAF8FC" stroke="#D8CDEA" stroke-width="1" rx="8"/>
+  <text x="443.0" y="204.0" font-size="18.5" fill="#555555" font-weight="bold">Joint reasoning</text>
+  <path d="M 170.0,275.0 L 180.0,275.0 L 180.0,155.0 L 201.0,155.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="input" data-target="image_encoder" data-edge-type="main" data-edge-id="edge-1" data-train-only="false"/>
+  <path d="M 170.0,275.0 L 180.0,275.0 L 180.0,395.0 L 201.0,395.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="input" data-target="text_encoder" data-edge-type="main" data-edge-id="edge-2" data-train-only="false"/>
+  <path d="M 390.0,155.0 L 420.0,155.0 L 420.0,275.0 L 445.0,275.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="image_encoder" data-target="fusion" data-edge-type="main" data-edge-id="edge-3" data-train-only="false"/>
+  <path d="M 390.0,395.0 L 420.0,395.0 L 420.0,275.0 L 445.0,275.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="text_encoder" data-target="fusion" data-edge-type="main" data-edge-id="edge-4" data-train-only="false"/>
+  <path d="M 616.0,275.0 L 636.0,275.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="fusion" data-target="novel" data-edge-type="main" data-edge-id="edge-5" data-train-only="false"/>
+  <path d="M 835.0,275.0 L 866.0,275.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="novel" data-target="head" data-edge-type="main" data-edge-id="edge-6" data-train-only="false"/>
+  <path d="M 1025.0,275.0 L 1046.0,275.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="head" data-target="output" data-edge-type="main" data-edge-id="edge-7" data-train-only="false"/>
+  <path d="M 740.0,343.0 L 740.0,424.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="novel" data-target="aux_loss" data-edge-type="training-only" data-edge-id="edge-8" data-train-only="true" stroke-dasharray="3,3"/>
+  <path d="M 390.0,155.0 L 420.0,155.0 L 420.0,53.0 L 740.0,53.0 L 740.0,198.0" stroke="#555555" stroke-width="2" fill="none" marker-end="url(#arrow-default-12)" data-source="image_encoder" data-target="novel" data-edge-type="skip" data-edge-id="edge-9" data-train-only="false" stroke-dasharray="8,4"/>
+  <text x="586.5" y="37.8" font-size="17.5" fill="#555555" text-anchor="middle" data-edge-label="edge-9">detail skip</text>
+  <g data-node-id="input" data-role="generic" data-execution="both">
+    <rect x="25.0" y="210.0" width="140.0" height="130.0" fill="#F3F4F6" stroke="#6B7280" stroke-width="2" rx="8"/>
+    <text x="95.0" y="251.4" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Paired</text>
+    <text x="95.0" y="282.2" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">input</text>
+    <text x="95.0" y="312.9" font-size="17.5" fill="#555555" text-anchor="middle">image + text</text>
+  </g>
+  <g data-node-id="image_encoder" data-role="encoder" data-execution="both">
+    <rect x="215.0" y="108.0" width="170.0" height="94.0" fill="#DCEEF8" stroke="#0072B2" stroke-width="2" rx="8"/>
+    <text x="300.0" y="146.8" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Image encoder</text>
+    <text x="300.0" y="177.6" font-size="17.5" fill="#555555" text-anchor="middle">multiscale</text>
+  </g>
+  <g data-node-id="text_encoder" data-role="encoder" data-execution="both">
+    <rect x="215.0" y="348.0" width="170.0" height="94.0" fill="#DCEEF8" stroke="#0072B2" stroke-width="2" rx="8"/>
+    <text x="300.0" y="386.8" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Text encoder</text>
+    <text x="300.0" y="417.6" font-size="17.5" fill="#555555" text-anchor="middle">tokens</text>
+  </g>
+  <g data-node-id="fusion" data-role="fusion" data-execution="both">
+    <polygon points="535.0,215.0 611.0,275.0 535.0,335.0 459.0,275.0" fill="#ECE4F6" stroke="#7B61A8" stroke-width="2"/>
+    <text x="535.0" y="266.8" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Scale-aware</text>
+    <text x="535.0" y="297.6" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">fusion</text>
+  </g>
+  <g data-node-id="novel" data-role="attention" data-execution="both">
+    <rect x="650.0" y="212.0" width="180.0" height="126.0" fill="#DDF3EF" stroke="#009E73" stroke-width="2" rx="8"/>
+    <text x="740.0" y="251.4" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Cross-modal</text>
+    <text x="740.0" y="282.2" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">refinement</text>
+    <text x="740.0" y="312.9" font-size="17.5" fill="#555555" text-anchor="middle">proposed module</text>
+  </g>
+  <g data-node-id="head" data-role="generic" data-execution="both">
+    <rect x="880.0" y="228.0" width="140.0" height="94.0" fill="#F3F4F6" stroke="#6B7280" stroke-width="2" rx="8"/>
+    <text x="950.0" y="266.8" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Prediction</text>
+    <text x="950.0" y="297.6" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">head</text>
+  </g>
+  <g data-node-id="output" data-role="output" data-execution="both">
+    <rect x="1060.0" y="243.0" width="80.0" height="64.0" fill="#F8DDD7" stroke="#D55E00" stroke-width="2" rx="8"/>
+    <text x="1100.0" y="282.2" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Output</text>
+  </g>
+  <g data-node-id="aux_loss" data-role="auxiliary" data-execution="training-only">
+    <rect x="652.0" y="438.0" width="176.0" height="94.0" fill="#FCE8D5" stroke="#E69F00" stroke-width="2" rx="8"/>
+    <text x="740.0" y="476.8" font-size="20.5" fill="#333333" text-anchor="middle" font-weight="bold">Alignment loss</text>
+    <text x="740.0" y="507.6" font-size="17.5" fill="#555555" text-anchor="middle">training only</text>
+  </g>
+  <text x="28.0" y="555.0" font-size="17.5" fill="#333333" text-anchor="start">solid: main inference; dashed: detail skip</text>
+  <text x="610.0" y="555.0" font-size="17.5" fill="#333333" text-anchor="start">dotted: training only</text>
+</svg>

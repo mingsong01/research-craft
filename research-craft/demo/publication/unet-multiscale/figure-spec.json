@@ -1,0 +1,340 @@
+{
+  "canvas": {
+    "width": 1160,
+    "height": 760
+  },
+  "style": {
+    "font_size": 24,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "palette": [
+      "#39485D",
+      "#4777AA",
+      "#318B80",
+      "#B7673B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "e0",
+      "label": "Conv encoder",
+      "x": 160,
+      "y": 190,
+      "width": 220,
+      "height": 150,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "tensor",
+      "sublabel": "H x W",
+      "role": "feature",
+      "operation": "conv",
+      "tensor_shape": "H x W"
+    },
+    {
+      "id": "e1",
+      "label": "Down + conv",
+      "x": 320,
+      "y": 405,
+      "width": 190,
+      "height": 130,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "tensor",
+      "sublabel": "H/2 x W/2",
+      "role": "feature",
+      "operation": "down-conv",
+      "tensor_shape": "H/2 x W/2"
+    },
+    {
+      "id": "b",
+      "label": "Bottleneck",
+      "x": 580,
+      "y": 585,
+      "width": 178,
+      "height": 118,
+      "stroke": "#B7673B",
+      "fill": "#FBEFE5",
+      "text_color": "#253348",
+      "shape": "tensor",
+      "sublabel": "H/4 x W/4",
+      "role": "feature",
+      "operation": "bottleneck",
+      "tensor_shape": "H/4 x W/4"
+    },
+    {
+      "id": "c1",
+      "label": "Concat",
+      "x": 665,
+      "y": 405,
+      "width": 110,
+      "height": 76,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "ellipse",
+      "operation": "concat"
+    },
+    {
+      "id": "d1",
+      "label": "Decoder",
+      "x": 920,
+      "y": 405,
+      "width": 190,
+      "height": 130,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "tensor",
+      "sublabel": "H/2 x W/2",
+      "role": "feature",
+      "operation": "decode",
+      "tensor_shape": "H/2 x W/2"
+    },
+    {
+      "id": "c0",
+      "label": "Concat",
+      "x": 775,
+      "y": 190,
+      "width": 110,
+      "height": 76,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "ellipse",
+      "operation": "concat"
+    },
+    {
+      "id": "d0",
+      "label": "Decoder",
+      "x": 1000,
+      "y": 190,
+      "width": 220,
+      "height": 150,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "tensor",
+      "sublabel": "H x W",
+      "role": "feature",
+      "operation": "decode",
+      "tensor_shape": "H x W"
+    }
+  ],
+  "edges": [
+    {
+      "from": "e0",
+      "to": "e1",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          160,
+          405
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-1"
+    },
+    {
+      "from": "e1",
+      "to": "b",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          320,
+          585
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-2"
+    },
+    {
+      "from": "b",
+      "to": "c1",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          580,
+          495
+        ],
+        [
+          665,
+          495
+        ]
+      ],
+      "source_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "id": "edge-3"
+    },
+    {
+      "from": "e1",
+      "to": "c1",
+      "type": "skip",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "style": "dashed",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-4"
+    },
+    {
+      "from": "c1",
+      "to": "d1",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-5"
+    },
+    {
+      "from": "d1",
+      "to": "c0",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "label": "up x2",
+      "label_segment": "longest-horizontal",
+      "waypoints": [
+        [
+          920,
+          295
+        ],
+        [
+          775,
+          295
+        ]
+      ],
+      "source_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "id": "edge-6"
+    },
+    {
+      "from": "e0",
+      "to": "c0",
+      "type": "skip",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "style": "dashed",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-7"
+    },
+    {
+      "from": "c0",
+      "to": "d0",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-8"
+    }
+  ],
+  "labels": [
+    {
+      "text": "ENCODING",
+      "x": 50,
+      "y": 50,
+      "font_size": 24,
+      "color": "#4777AA",
+      "anchor": "start"
+    },
+    {
+      "text": "SAME-SCALE SKIPS",
+      "x": 420,
+      "y": 50,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "DECODING",
+      "x": 890,
+      "y": 50,
+      "font_size": 24,
+      "color": "#318B80",
+      "anchor": "start"
+    },
+    {
+      "text": "up x2",
+      "x": 700,
+      "y": 515,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Concat: channel-wise joining. Dashed: same-scale skip. Vertical transitions: down / up x2.",
+      "x": 25,
+      "y": 695,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Stage outputs named by producer. Block sizes: ordinal only; channels unspecified.",
+      "x": 25,
+      "y": 732,
+      "font_size": 21,
+      "color": "#39485D",
+      "anchor": "start"
+    }
+  ]
+}

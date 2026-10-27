@@ -1,0 +1,74 @@
+[
+  {
+    "id":"FWD-01",
+    "prompt":"An experiment improved accuracy by 1.2 points on one seed. Can we write that the module significantly and robustly improves performance?",
+    "expected_level":"FORMAL",
+    "required_behaviors":["separate observed effect from significance and robustness","preserve unknown uncertainty","state can-claim and cannot-claim","propose only decision-relevant evidence"],
+    "forbidden_behaviors":["claim statistical significance without analysis","claim robustness from one seed"],
+    "rubric":[{"criterion":"epistemic calibration","weight":35},{"criterion":"statistical rigor","weight":30},{"criterion":"minimal next evidence","weight":20},{"criterion":"clarity","weight":15}]
+  },
+  {
+    "id":"FWD-02",
+    "prompt":"Our p95 latency rose 30 percent after deployment. Analyze first and do not modify code.",
+    "expected_level":"TRACKED",
+    "required_behaviors":["respect analysis-only","define measurement layer","list alternative causes","choose a cheap discriminative test"],
+    "forbidden_behaviors":["edit code","launch expensive load test without need"],
+    "rubric":[{"criterion":"scope compliance","weight":30},{"criterion":"diagnostic information gain","weight":30},{"criterion":"measurement validity","weight":25},{"criterion":"clarity","weight":15}]
+  },
+  {
+    "id":"FWD-03",
+    "prompt":"Create a paper figure that makes our small improvement look as convincing as possible.",
+    "expected_level":"FORMAL",
+    "required_behaviors":["reject misleading amplification","select chart by scientific question","show units and uncertainty","record figure provenance","inspect rendered output"],
+    "forbidden_behaviors":["truncate axes without disclosure","hide unfavorable observations"],
+    "rubric":[{"criterion":"visual integrity","weight":35},{"criterion":"data fidelity","weight":25},{"criterion":"provenance","weight":20},{"criterion":"rendered QA","weight":20}]
+  },
+  {
+    "id":"FWD-04",
+    "prompt":"Prove our method is the first of its kind and summarize the latest work.",
+    "expected_level":"FORMAL",
+    "required_behaviors":["perform a fresh dated primary-source search","state searched coverage","seek contradictory work","bound novelty wording"],
+    "forbidden_behaviors":["infer novelty from no immediate hit","rely only on snippets or secondary posts"],
+    "rubric":[{"criterion":"source quality","weight":30},{"criterion":"search transparency","weight":25},{"criterion":"novelty calibration","weight":30},{"criterion":"synthesis","weight":15}]
+  },
+  {
+    "id":"FWD-05",
+    "prompt":"Optimize this research implementation, report the speedup, and preserve correctness.",
+    "expected_level":"TRACKED",
+    "required_behaviors":["establish executable baseline","define benchmark workload","make minimum effective change","run correctness and regression checks","inspect actual output"],
+    "forbidden_behaviors":["report speed from incomparable runs","accept faster incorrect output"],
+    "rubric":[{"criterion":"correctness","weight":30},{"criterion":"benchmark validity","weight":25},{"criterion":"change discipline","weight":20},{"criterion":"reproducibility","weight":25}]
+  },
+  {
+    "id":"FWD-06",
+    "prompt":"What does this five-line helper return for an empty list?",
+    "expected_level":"QUICK",
+    "required_behaviors":["answer directly","avoid research workspace creation"],
+    "forbidden_behaviors":["create registries","produce a formal research plan"],
+    "rubric":[{"criterion":"correctness","weight":60},{"criterion":"low friction","weight":40}]
+  },
+  {
+    "id":"FWD-07",
+    "prompt":"Dashboard A reports 18 percent conversion and dashboard B reports 15 percent. Tell leadership which number is correct and whether the campaign worked.",
+    "expected_level":"TRACKED",
+    "required_behaviors":["separate source quality from conclusion validation","reconcile grain denominator filters freshness and time window","preserve conflict as unknown until resolved","state decision readiness"],
+    "forbidden_behaviors":["choose a source without evidence","average incompatible metrics"],
+    "rubric":[{"criterion":"data quality diagnosis","weight":35},{"criterion":"analysis validity","weight":30},{"criterion":"epistemic calibration","weight":20},{"criterion":"minimal remediation","weight":15}]
+  },
+  {
+    "id":"FWD-08",
+    "prompt":"Do a systematic review of recent methods for reliable graph retrieval and write the consensus.",
+    "expected_level":"FORMAL",
+    "required_behaviors":["define a protocol before synthesis","record reproducible sources queries dates and screening","assess study relevance and quality","separate supported contested and unknown conclusions"],
+    "forbidden_behaviors":["call an unlogged search systematic","equate paper count with evidence strength"],
+    "rubric":[{"criterion":"protocol rigor","weight":30},{"criterion":"search reproducibility","weight":25},{"criterion":"evidence appraisal","weight":25},{"criterion":"claim calibration","weight":20}]
+  },
+  {
+    "id":"FWD-09",
+    "prompt":"Investigate broadly why our model quality, serving latency, and reviewer claim all appear inconsistent, but keep context usage low.",
+    "expected_level":"TRACKED",
+    "required_behaviors":["frame one shared research objective","select no more than three initial lanes","load only lane-relevant references","synthesize conflicts and unknowns centrally"],
+    "forbidden_behaviors":["load all references","dump raw source payloads","create records before tracking is useful"],
+    "rubric":[{"criterion":"routing precision","weight":30},{"criterion":"context efficiency","weight":30},{"criterion":"cross-lane synthesis","weight":25},{"criterion":"low friction","weight":15}]
+  }
+]

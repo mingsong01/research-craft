@@ -1,0 +1,361 @@
+{
+  "canvas": {
+    "width": 850,
+    "height": 1580
+  },
+  "style": {
+    "font_size": 30,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "palette": [
+      "#39485D",
+      "#4777AA",
+      "#318B80",
+      "#B7673B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "input",
+      "label": "Paired input",
+      "x": 365,
+      "y": 120,
+      "width": 240,
+      "height": 140,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "image + text"
+    },
+    {
+      "id": "image_encoder",
+      "label": "Image encoder",
+      "x": 200,
+      "y": 415,
+      "width": 270,
+      "height": 220,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "multiscale",
+      "representation": "feature-map",
+      "role": "encoder"
+    },
+    {
+      "id": "text_encoder",
+      "label": "Text encoder",
+      "x": 565,
+      "y": 415,
+      "width": 270,
+      "height": 220,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "tokens",
+      "representation": "tokens",
+      "role": "encoder"
+    },
+    {
+      "id": "fusion",
+      "label": "Scale-aware\nfusion",
+      "x": 365,
+      "y": 690,
+      "width": 250,
+      "height": 160,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "role": "fusion"
+    },
+    {
+      "id": "novel",
+      "label": "Cross-modal\nrefinement",
+      "x": 365,
+      "y": 975,
+      "width": 300,
+      "height": 200,
+      "stroke": "#B7673B",
+      "fill": "#FBEFE5",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "proposed module",
+      "role": "attention",
+      "emphasis": true
+    },
+    {
+      "id": "head",
+      "label": "Prediction head",
+      "x": 365,
+      "y": 1200,
+      "width": 280,
+      "height": 100,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "x": 365,
+      "y": 1370,
+      "width": 180,
+      "height": 90,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "role": "output"
+    },
+    {
+      "id": "aux_loss",
+      "label": "Alignment\nloss",
+      "x": 705,
+      "y": 975,
+      "width": 210,
+      "height": 200,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "training only",
+      "role": "auxiliary",
+      "execution": "training-only"
+    }
+  ],
+  "edges": [
+    {
+      "from": "input",
+      "to": "image_encoder",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          305,
+          250
+        ],
+        [
+          200,
+          250
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.25
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-1"
+    },
+    {
+      "from": "input",
+      "to": "text_encoder",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          425,
+          250
+        ],
+        [
+          565,
+          250
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.75
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-2"
+    },
+    {
+      "from": "image_encoder",
+      "to": "fusion",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          200,
+          570
+        ],
+        [
+          302.5,
+          570
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.25
+      },
+      "id": "edge-3"
+    },
+    {
+      "from": "text_encoder",
+      "to": "fusion",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          565,
+          570
+        ],
+        [
+          427.5,
+          570
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.75
+      },
+      "id": "edge-4"
+    },
+    {
+      "from": "fusion",
+      "to": "novel",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-5"
+    },
+    {
+      "from": "novel",
+      "to": "head",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-6"
+    },
+    {
+      "from": "head",
+      "to": "output",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-7"
+    },
+    {
+      "from": "novel",
+      "to": "aux_loss",
+      "type": "training-only",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "style": "dotted",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-8"
+    },
+    {
+      "from": "image_encoder",
+      "to": "novel",
+      "type": "skip",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "style": "dashed",
+      "waypoints": [
+        [
+          30,
+          415
+        ],
+        [
+          30,
+          975
+        ]
+      ],
+      "source_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-9"
+    }
+  ],
+  "labels": [
+    {
+      "text": "detail skip",
+      "x": 65,
+      "y": 825,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Solid: inference; dashed: detail skip",
+      "x": 35,
+      "y": 1470,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Dotted: training only",
+      "x": 35,
+      "y": 1510,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Symbolic glyphs; dimensions unspecified.",
+      "x": 35,
+      "y": 1550,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    }
+  ]
+}

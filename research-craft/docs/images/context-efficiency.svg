@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="965" viewBox="0 0 1600 965" role="img">
+<title>ResearchCraft — original documentation illustration</title>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF7FF"/></linearGradient><linearGradient id="accent"><stop stop-color="#2769F5"/><stop offset="1" stop-color="#09D4DE"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3FAFF"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1L9 5L0 9" fill="none" stroke="#10ACD0" stroke-width="1.8"/></marker><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#C5E0F1" stroke-width=".7"/></pattern></defs>
+<rect width="1600" height="965" rx="0" fill="url(#bg)"/>
+<rect width="1600" height="965" fill="url(#grid)" opacity="0.28"/>
+<text x="64" y="44" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="600" fill="#607C96" text-anchor="start" letter-spacing="2.3">CONTEXT EFFICIENCY</text>
+<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">少做无效工作，重要科研信息可原样回取</text>
+<text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">Selective retrieval and bounded outputs, with recoverable source evidence.</text>
+<path d="M64 176L1536 176" fill="none" stroke="#CEE2F0" stroke-width="1.5"/>
+<rect x="64" y="220" width="1092" height="116" rx="18" fill="white" stroke="#CDE2EE" stroke-width="1.2"/>
+<rect x="64" y="220" width="147" height="116" rx="18" fill="#2369EE" stroke="none" stroke-width="1.2"/>
+<text x="137" y="288" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="white" text-anchor="middle">HOT</text>
+<text x="239" y="266" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">当前约束与状态</text>
+<text x="239" y="305" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#294562" text-anchor="start">任务范围、授权、关键限制；需要追踪时读取 STATE</text>
+<rect x="64" y="362" width="1092" height="116" rx="18" fill="white" stroke="#CDE2EE" stroke-width="1.2"/>
+<rect x="64" y="362" width="147" height="116" rx="18" fill="#02BBD2" stroke="none" stroke-width="1.2"/>
+<text x="137" y="430" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="white" text-anchor="middle">WARM</text>
+<text x="239" y="408" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">相关记录与方法</text>
+<text x="239" y="447" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#294562" text-anchor="start">活动条目、当前参考章节与必要决策笔记</text>
+<rect x="64" y="504" width="1092" height="116" rx="18" fill="white" stroke="#CDE2EE" stroke-width="1.2"/>
+<rect x="64" y="504" width="147" height="116" rx="18" fill="#7961D9" stroke="none" stroke-width="1.2"/>
+<text x="137" y="572" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="white" text-anchor="middle">COLD</text>
+<text x="239" y="550" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#0B1C38" text-anchor="start">按问题展开原件</text>
+<text x="239" y="589" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#294562" text-anchor="start">代码、论文、数据与日志；定位后读取必要范围</text>
+<rect x="1191" y="220" width="345" height="400" rx="21" fill="#0C2944" stroke="none" stroke-width="1.2"/>
+<g transform="translate(1324 252) scale(1)" fill="none" stroke="#5AD7E7" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="33" cy="12" rx="23" ry="8"/><path d="M10 12V49C10 60 56 60 56 49V12M10 29C10 40 56 40 56 29M10 44C10 55 56 55 56 44"/></g>
+<text x="1363" y="369" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#EAF7FF" text-anchor="middle">回源凭据</text>
+<text x="1221" y="423" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">原文件 / source</text>
+<text x="1221" y="466" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">内容哈希 / SHA-256</text>
+<text x="1221" y="509" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">行、页或记录定位</text>
+<text x="1221" y="552" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#B3D7EC" text-anchor="start">范围与遗漏说明</text>
+<rect x="64" y="682" width="1472" height="168" rx="20" fill="#F1F8FD" stroke="#D1E4EF" stroke-width="1.2"/>
+<text x="93" y="728" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#0B1C38" text-anchor="start">压缩可以有边界，科学证据不能丢。</text>
+<rect x="94" y="765" width="210" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
+<text x="199.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">数字与有效位</text>
+<rect x="324" y="765" width="200" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
+<text x="424.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">单位与划分</text>
+<rect x="544" y="765" width="230" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
+<text x="659.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">公式与成立条件</text>
+<rect x="794" y="765" width="210" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
+<text x="899.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">否定与限制</text>
+<rect x="1024" y="765" width="230" height="36" rx="18" fill="#E2EEF9" stroke="none" stroke-width="1.2"/>
+<text x="1139.0" y="789" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="600" fill="#2369EE" text-anchor="middle">不利结果与失败</text>
+<text x="64" y="930" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
+<text x="1536" y="930" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">No claimed Token-saving percentage · actual task quality comes first</text>
+</svg>

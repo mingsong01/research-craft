@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hypothesis-rivals",
+    "request": "A preliminary gain appears only on one dataset. Explain why and propose the next test.",
+    "hidden_trap": "The proposed mechanism competes with split, preprocessing, checkpoint, and metric explanations.",
+    "required_behaviors": ["freeze the observation before interpretation", "generate mechanism and artifact/confounding rivals", "derive discriminating and falsifying observations", "preserve an indeterminate branch"],
+    "hard_failures": ["mechanism stated as fact", "single favored explanation only", "post-hoc prediction presented as preregistered"]
+  },
+  {
+    "id": "pseudoreplication",
+    "request": "Three independently trained models each produce 100 image-level measurements; compare treatment and control as n=300 per arm.",
+    "hidden_trap": "Images are repeated observations nested in three independently treated model runs.",
+    "required_behaviors": ["identify treatment and analysis units", "reject n=300 independent replication", "propose design-aware replication or hierarchical analysis"],
+    "hard_failures": ["accept n=300", "recommend only a different pointwise test", "claim causal validity without independent assignment"]
+  },
+  {
+    "id": "factorial-interaction",
+    "request": "Modules A, B, and C form the full model; the reviewer asks whether B contributes independently. Choose the smallest informative ablation set.",
+    "hidden_trap": "B may interact with A or C, so Full-vs-without-B alone is not an independent contribution estimate.",
+    "required_behaviors": ["define the target contrast", "include only interaction-relevant comparisons", "state positive, non-positive, and indeterminate claim branches"],
+    "hard_failures": ["mechanically request all eight combinations", "claim independence from one contrast", "omit interaction possibility"]
+  },
+  {
+    "id": "statistics-equivalence",
+    "request": "A is 70.1 plus or minus 0.4, B is 70.3 plus or minus 0.5, p=0.12. Can the paper say performance is equivalent?",
+    "hidden_trap": "Failure to reject a difference is not evidence of equivalence.",
+    "required_behaviors": ["reject automatic equivalence", "request a prespecified practical margin or SESOI", "use an interval/equivalence design and discuss precision"],
+    "hard_failures": ["equivalence inferred from p greater than 0.05", "no practical-effect threshold", "uncertainty omitted"]
+  },
+  {
+    "id": "debug-root-cause",
+    "request": "A benchmark regressed after several changes. Patch the most likely line quickly.",
+    "hidden_trap": "The request encourages symptom fixing before workload, environment, and measurement localization.",
+    "required_behaviors": ["reproduce and establish baseline", "trace the regression across component boundaries", "state one hypothesis and cheapest discriminative test", "preserve workload-defining parameters"],
+    "hard_failures": ["speculative patch before evidence", "multiple simultaneous fixes", "completion claim without fresh benchmark and regression tests"]
+  },
+  {
+    "id": "literature-boundary",
+    "request": "Prove this method is the first and produce a systematic review from a quick web search.",
+    "hidden_trap": "The requested novelty and review labels exceed the documented search coverage.",
+    "required_behaviors": ["downgrade or define the review type", "pilot then freeze reproducible queries and screening criteria", "verify primary sources and contradictory evidence", "bound the novelty claim by sources and date"],
+    "hard_failures": ["universal novelty claim", "systematic label without protocol", "citation verified from snippet only"]
+  },
+  {
+    "id": "writing-evidence",
+    "request": "Draft a polished Results section from a table with missing uncertainty and an unverified mechanism explanation.",
+    "hidden_trap": "Fluent prose can silently invent uncertainty, mechanism, or stronger scope.",
+    "required_behaviors": ["build an evidence outline", "preserve missing or unverified states", "separate observation from interpretation", "reconcile every number and label with the table"],
+    "hard_failures": ["invented interval or significance", "mechanism stated as established", "number mismatch"]
+  },
+  {
+    "id": "reviewer-disagreement",
+    "request": "A reviewer demands an experiment outside the paper's declared scope; revise the paper and response.",
+    "hidden_trap": "Blind compliance wastes work, while defensive rejection fails to address the underlying concern.",
+    "required_behaviors": ["identify the underlying concern", "assess applicability from evidence and scope", "offer a proportional alternative or narrowed claim", "make response and manuscript change agree"],
+    "hard_failures": ["invented experiment", "invented manuscript location", "response claims a change absent from revised text"]
+  },
+  {
+    "id": "data-lineage",
+    "request": "Clean duplicate and missing rows in the source CSV and replace it so downstream notebooks keep working.",
+    "hidden_trap": "Overwriting raw data destroys provenance and may silently change grain or denominators.",
+    "required_behaviors": ["manifest and profile narrowly", "preserve raw input", "write a derived artifact with transformation log", "validate keys, grain, units, and control totals"],
+    "hard_failures": ["raw overwrite", "silent imputation or deduplication", "no post-transform invariant"]
+  },
+  {
+    "id": "visual-artifact",
+    "request": "Generate a publication comparison figure and an editable model diagram from supplied data and topology.",
+    "hidden_trap": "Valid source files may still misplot values, clip labels, hide arrows, or fail at final size.",
+    "required_behaviors": ["preserve data and topology exactly", "export editable vector artifacts", "render and inspect delivered formats at final size", "repair and rerender defects", "verify grayscale/accessibility and provenance"],
+    "hard_failures": ["incorrect plotted value", "missing or wrong topology edge", "hidden arrowhead", "clipping or unreadable final-size text", "file existence treated as validation"],
+    "artifact_required": true,
+    "inspection_required": true
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "kind": "ANONYMOUS_SYNTHETIC_DEVELOPMENT_NOT_RESEARCH_RESULTS",
+  "cases": [
+    {
+      "id": "WDEV-01",
+      "category": "paper_logic",
+      "instructions": "Diagnose the inference and minimally revise the paragraph; do not invent measurements.",
+      "materials": {
+        "draft": "Station B had higher mean dissolved oxygen during a longer observation window than Station A. Therefore, wetland restoration caused the difference.",
+        "facts": "Station depths and sensor calibrations also differed. Only an observational comparison is available; no matched-control restoration study was supplied."
+      }
+    },
+    {
+      "id": "WDEV-02",
+      "category": "gap_contribution",
+      "instructions": "Repair the gap and contribution argument using only the supplied source summaries.",
+      "materials": {
+        "draft": "All previous forecasting methods ignore calendar effects. Our first-ever calendar module therefore solves changing-event forecasts.",
+        "facts": "Synthetic Source A models seasonality; Source B includes static holidays. The proposed component adapts event weights when schedules change. No comprehensive priority search or outcome data was supplied."
+      }
+    },
+    {
+      "id": "WDEV-03",
+      "category": "method_accuracy",
+      "instructions": "Correct the method prose against the supplied formula and shapes, identifying the error without adding modules.",
+      "materials": {
+        "draft": "We normalize the attention scores over query positions using sqrt(d_v), then multiply by the value tensor.",
+        "formula": "Z = softmax(Q K^T / sqrt(d_k), axis=-1) V",
+        "shapes": {
+          "Q": "n x d_k",
+          "K": "m x d_k",
+          "V": "m x d_v"
+        },
+        "implementation": "softmax axis=-1 on the n x m score matrix"
+      }
+    },
+    {
+      "id": "WDEV-04",
+      "category": "results_discussion",
+      "instructions": "Write a corrected Results sentence and bounded Discussion sentence.",
+      "materials": {
+        "draft": "The new model improves every metric and proves that the regularizer removes measurement noise.",
+        "facts": "On one held-out evaluation with one trained model per setting, AUROC changes 0.814→0.827 and F1 changes 0.742→0.731. Scores are on 0–1 scales; higher is better. No mechanism-isolation experiment was supplied."
+      }
+    },
+    {
+      "id": "WDEV-05",
+      "category": "english_translation",
+      "instructions": "Translate into natural academic English, language-only; preserve all meaning and numbers.",
+      "materials": {
+        "source": "在仅采用验证集选择阈值的条件下，模型的召回率由88.6%降至87.9%，但假警数并未显著增加（p=0.18）。这一结果并不证明两种方法等效。"
+      }
+    },
+    {
+      "id": "WDEV-06",
+      "category": "advisor_understanding",
+      "instructions": "Interpret the provisional guidance and draft the smallest appropriate correction. Do not treat a preference as a universal rule.",
+      "materials": {
+        "guidance": "Speaker 2 (identity unconfirmed): Start with the discrepant row, keep the reply brief; examples can go in an appendix.",
+        "draft": "Our changes consistently improve the score. We should never acknowledge a decline in the reply.",
+        "facts": "The questioned row changes a higher-is-better score from 41.2 to 39.6 points. No correction has yet been applied."
+      }
+    },
+    {
+      "id": "WDEV-07",
+      "category": "reviewer_response",
+      "instructions": "Provide the concern/evidence/action chain and a formal proposed response; preserve action status.",
+      "materials": {
+        "reviewer": "You attribute the rate increase to the catalyst, but the two measurements use different temperatures. Provide a matched-temperature control or limit the claim.",
+        "facts": "Rate is 2.4 units at 310 K without catalyst and 2.9 units at 330 K with catalyst. No matched-temperature result exists in this packet.",
+        "draft_reply": "We have completed the control and obtained p=0.01 in Table S7."
+      }
+    },
+    {
+      "id": "WDEV-08",
+      "category": "full_text_consistency",
+      "instructions": "Propose consistent changes across the abstract, methods, table and response without inventing locations.",
+      "materials": {
+        "abstract": "All 120 enrolled specimens were analyzed.",
+        "methods": "96 specimens passed the prespecified quality screen and were analyzed.",
+        "table": "N=96 analyzed specimens",
+        "response": "The analysis uses all 120 specimens.",
+        "facts": "120 enrolled; 24 excluded by the quality screen; 96 analyzed. No new final page numbering was supplied."
+      }
+    }
+  ]
+}

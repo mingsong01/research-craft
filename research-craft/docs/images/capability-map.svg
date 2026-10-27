@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020" role="img">
+<title>ResearchCraft — original documentation illustration</title>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF7FF"/></linearGradient><linearGradient id="accent"><stop stop-color="#2769F5"/><stop offset="1" stop-color="#09D4DE"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3FAFF"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1L9 5L0 9" fill="none" stroke="#10ACD0" stroke-width="1.8"/></marker><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#C5E0F1" stroke-width=".7"/></pattern></defs>
+<rect width="1600" height="1020" rx="0" fill="url(#bg)"/>
+<rect width="1600" height="1020" fill="url(#grid)" opacity="0.28"/>
+<text x="64" y="44" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="600" fill="#607C96" text-anchor="start" letter-spacing="2.3">CAPABILITY MAP</text>
+<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">从真实材料，到可核查的科研成果</text>
+<text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">One integrated Skill. Four complementary capabilities.</text>
+<path d="M64 176L1536 176" fill="none" stroke="#CEE2F0" stroke-width="1.5"/>
+<rect x="67" y="216" width="708" height="314" rx="24" fill="#E6F0F7" stroke="none" stroke-width="1.2"/>
+<rect x="64" y="210" width="708" height="314" rx="24" fill="url(#glass)" stroke="#CADFEE" stroke-width="1.2"/>
+<rect x="88" y="234" width="77" height="77" rx="19" fill="#EEF7FE" stroke="none" stroke-width="1.2"/>
+<g transform="translate(98 242) scale(0.88)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 53V37H18V53M28 53V24H38V53M48 53V10H58V53M5 58H62"/></g>
+<text x="188" y="268" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#0B1C38" text-anchor="start">科研分析</text>
+<text x="189" y="301" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Scientific analysis</text>
+<text x="731" y="262" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#A3BDCF" text-anchor="end">01</text>
+<path d="M89 337L744 337" fill="none" stroke="#D8E7F1" stroke-width="1.5"/>
+<circle cx="103" cy="377" r="4" fill="#2369EE" stroke="none"/>
+<text x="122" y="385" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">数据质量、指标与可比性</text>
+<circle cx="103" cy="422" r="4" fill="#2369EE" stroke="none"/>
+<text x="122" y="430" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">代码 / 日志定位与异常诊断</text>
+<circle cx="103" cy="467" r="4" fill="#2369EE" stroke="none"/>
+<text x="122" y="475" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">控制变量、竞争解释与证据边界</text>
+<rect x="831" y="216" width="708" height="314" rx="24" fill="#E6F0F7" stroke="none" stroke-width="1.2"/>
+<rect x="828" y="210" width="708" height="314" rx="24" fill="url(#glass)" stroke="#CADFEE" stroke-width="1.2"/>
+<rect x="852" y="234" width="77" height="77" rx="19" fill="#EEF7FE" stroke="none" stroke-width="1.2"/>
+<g transform="translate(862 242) scale(0.88)" fill="none" stroke="#02BBD2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><rect x="23" y="3" width="23" height="15" rx="3"/><rect x="2" y="44" width="22" height="15" rx="3"/><rect x="44" y="44" width="22" height="15" rx="3"/><path d="M34 18V31H13V44M34 31H55V44"/></g>
+<text x="952" y="268" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#0B1C38" text-anchor="start">模型架构绘图</text>
+<text x="953" y="301" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Model diagrams</text>
+<text x="1495" y="262" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#A3BDCF" text-anchor="end">02</text>
+<path d="M853 337L1508 337" fill="none" stroke="#D8E7F1" stroke-width="1.5"/>
+<circle cx="867" cy="377" r="4" fill="#02BBD2" stroke="none"/>
+<text x="886" y="385" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">真实结构与数据流恢复</text>
+<circle cx="867" cy="422" r="4" fill="#02BBD2" stroke="none"/>
+<text x="886" y="430" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">架构专属布局、特征与模块表达</text>
+<circle cx="867" cy="467" r="4" fill="#02BBD2" stroke="none"/>
+<text x="886" y="475" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">可编辑源、渲染与最终尺寸核对</text>
+<rect x="67" y="572" width="708" height="314" rx="24" fill="#E6F0F7" stroke="none" stroke-width="1.2"/>
+<rect x="64" y="566" width="708" height="314" rx="24" fill="url(#glass)" stroke="#CADFEE" stroke-width="1.2"/>
+<rect x="88" y="590" width="77" height="77" rx="19" fill="#EEF7FE" stroke="none" stroke-width="1.2"/>
+<g transform="translate(98 598) scale(0.88)" fill="none" stroke="#7961D9" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4H43L56 17V61H15ZM43 4V18H56M24 29H46M24 39H46M24 49H39"/></g>
+<text x="188" y="624" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#0B1C38" text-anchor="start">论文写作与返修</text>
+<text x="189" y="657" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Writing &amp; reviewer response</text>
+<text x="731" y="618" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#A3BDCF" text-anchor="end">03</text>
+<path d="M89 693L744 693" fill="none" stroke="#D8E7F1" stroke-width="1.5"/>
+<circle cx="103" cy="733" r="4" fill="#7961D9" stroke="none"/>
+<text x="122" y="741" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">章节与段落的科学论证诊断</text>
+<circle cx="103" cy="778" r="4" fill="#7961D9" stroke="none"/>
+<text x="122" y="786" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">最小改文、英文与中英保真</text>
+<circle cx="103" cy="823" r="4" fill="#7961D9" stroke="none"/>
+<text x="122" y="831" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">完整意见、补证计划与正式回信</text>
+<rect x="831" y="572" width="708" height="314" rx="24" fill="#E6F0F7" stroke="none" stroke-width="1.2"/>
+<rect x="828" y="566" width="708" height="314" rx="24" fill="url(#glass)" stroke="#CADFEE" stroke-width="1.2"/>
+<rect x="852" y="590" width="77" height="77" rx="19" fill="#EEF7FE" stroke="none" stroke-width="1.2"/>
+<g transform="translate(862 598) scale(0.88)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="27" r="19"/><path d="M42 42L61 60M20 27H36M28 19V35"/></g>
+<text x="952" y="624" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#0B1C38" text-anchor="start">上下文效率</text>
+<text x="953" y="657" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Context efficiency</text>
+<text x="1495" y="618" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#A3BDCF" text-anchor="end">04</text>
+<path d="M853 693L1508 693" fill="none" stroke="#D8E7F1" stroke-width="1.5"/>
+<circle cx="867" cy="733" r="4" fill="#2369EE" stroke="none"/>
+<text x="886" y="741" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">仅选读当前任务所需参考</text>
+<circle cx="867" cy="778" r="4" fill="#2369EE" stroke="none"/>
+<text x="886" y="786" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">有界查询、流式 CSV 与精确回源</text>
+<circle cx="867" cy="823" r="4" fill="#2369EE" stroke="none"/>
+<text x="886" y="831" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#294562" text-anchor="start">保护数字、公式、否定与不利结果</text>
+<text x="800" y="944" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="600" fill="#294562" text-anchor="middle">FACT → EVIDENCE → SOURCE    |    观察、解释与假设始终分开</text>
+<text x="64" y="985" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
+<text x="1536" y="985" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">一个 Skill · 按需参考 · 可追溯成果 / One Skill, evidence-driven work</text>
+</svg>

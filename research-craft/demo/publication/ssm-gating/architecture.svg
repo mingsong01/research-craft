@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 765" width="1550" height="765" font-family="Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'">
+  <style>text { font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'; }</style>
+  <rect x="0" y="0" width="1550" height="765" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#39485D"/>
+    </marker>
+    <marker id="arrow-c1-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#4777AA"/>
+    </marker>
+    <marker id="arrow-c2-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#318B80"/>
+    </marker>
+    <marker id="arrow-c3-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#B7673B"/>
+    </marker>
+  </defs>
+  <path d="M 295.0,315.0 L 320.0,315.0 L 320.0,260.0 L 361.0,260.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="x" data-target="local" data-edge-type="main" data-edge-id="edge-1" data-train-only="false"/>
+  <path d="M 630.0,260.0 L 706.0,260.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="local" data-target="scan" data-edge-type="main" data-edge-id="edge-2" data-train-only="false"/>
+  <path d="M 985.0,260.0 L 1110.0,260.0 L 1110.0,321.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="scan" data-target="mul" data-edge-type="main" data-edge-id="edge-3" data-train-only="false"/>
+  <path d="M 295.0,425.0 L 320.0,425.0 L 320.0,530.0 L 561.0,530.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="x" data-target="gate" data-edge-type="main" data-edge-id="edge-4" data-train-only="false"/>
+  <path d="M 790.0,530.0 L 1110.0,530.0 L 1110.0,419.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="gate" data-target="mul" data-edge-type="main" data-edge-id="edge-5" data-train-only="false"/>
+  <path d="M 1150.0,370.0 L 1226.0,370.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="mul" data-target="proj" data-edge-type="main" data-edge-id="edge-6" data-train-only="false"/>
+  <g data-node-id="x" data-role="generic" data-execution="both">
+    <rect x="30.0" y="260.0" width="260.0" height="220.0" fill="#EAF1F8" stroke="#4777AA" stroke-width="2" rx="8"/>
+    <g data-decoration="tokens" aria-label="symbolic representation; counts are not dimensions">
+      <path d="M107.5,278.0 h17.0 v42.0 h-17.0 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M128.5,278.0 h17.0 v42.0 h-17.0 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M149.5,278.0 h17.0 v42.0 h-17.0 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M170.5,278.0 h17.0 v42.0 h-17.0 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+      <path d="M191.5,278.0 h17.0 v42.0 h-17.0 Z" fill="#EAF1F8" stroke="#4777AA" stroke-width="1.7"/>
+    </g>
+    <text x="160.0" y="421.0" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">Input sequence</text>
+  </g>
+  <g data-node-id="local" data-role="generic" data-execution="both" data-operation="local-mix">
+    <rect x="375.0" y="195.0" width="250.0" height="130.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="500.0" y="270.5" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">Local mixing</text>
+  </g>
+  <g data-node-id="scan" data-role="generic" data-execution="both" data-operation="forward-ssm">
+    <rect x="720.0" y="185.0" width="260.0" height="150.0" fill="#FBEFE5" stroke="#B7673B" stroke-width="2" rx="8"/>
+    <path d="M728.0,197.0 V323.0" fill="none" stroke="#B7673B" stroke-width="5" data-decoration="emphasis"/>
+    <text x="850.0" y="248.0" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">Forward scan</text>
+    <text x="850.0" y="293.0" font-size="27" fill="#555555" text-anchor="middle">SSM state path</text>
+  </g>
+  <g data-node-id="gate" data-role="generic" data-execution="both" data-operation="gate">
+    <rect x="575.0" y="470.0" width="210.0" height="120.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2" rx="8"/>
+    <text x="680.0" y="540.5" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">Gate</text>
+  </g>
+  <g data-node-id="mul" data-role="generic" data-execution="both" data-operation="multiply">
+    <circle cx="1110.0" cy="370.0" r="35.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2"/>
+    <text x="1110.0" y="380.5" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">×</text>
+  </g>
+  <g data-node-id="proj" data-role="generic" data-execution="both" data-operation="projection">
+    <rect x="1240.0" y="305.0" width="260.0" height="130.0" fill="#F3F5F7" stroke="#39485D" stroke-width="2" rx="8"/>
+    <text x="1370.0" y="380.5" font-size="30" fill="#253348" text-anchor="middle" font-weight="bold">Projection</text>
+  </g>
+  <text x="35.0" y="70.0" font-size="30" fill="#39485D" text-anchor="start">GATED STATE-SPACE PATH</text>
+  <text x="375.0" y="165.0" font-size="27" fill="#B7673B" text-anchor="start">State-space branch</text>
+  <text x="575.0" y="640.0" font-size="27" fill="#318B80" text-anchor="start">Input-dependent gate</text>
+  <text x="35.0" y="695.0" font-size="27" fill="#39485D" text-anchor="start">×: elementwise multiplication. One forward scan; no reverse scan or residual is implied.</text>
+  <text x="35.0" y="730.0" font-size="27" fill="#39485D" text-anchor="start">Synthetic branch contract, not a reproduction of Mamba or MambaVision.</text>
+</svg>

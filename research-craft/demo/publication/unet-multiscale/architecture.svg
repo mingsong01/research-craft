@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 760" width="1160" height="760" font-family="Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'">
+  <style>text { font-family: Arial, Helvetica, sans-serif, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC'; }</style>
+  <rect x="0" y="0" width="1160" height="760" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#39485D"/>
+    </marker>
+    <marker id="arrow-c1-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#4777AA"/>
+    </marker>
+    <marker id="arrow-c2-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#318B80"/>
+    </marker>
+    <marker id="arrow-c3-12" markerWidth="12" markerHeight="12" refX="3.0" refY="6.0" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,6.0 L0,12 L3.0,6.0 Z" fill="#B7673B"/>
+    </marker>
+  </defs>
+  <path d="M 160.0,270.0 L 160.0,405.0 L 211.0,405.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="e0" data-target="e1" data-edge-type="main" data-edge-id="edge-1" data-train-only="false"/>
+  <path d="M 320.0,475.0 L 320.0,585.0 L 477.0,585.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="e1" data-target="b" data-edge-type="main" data-edge-id="edge-2" data-train-only="false"/>
+  <path d="M 580.0,521.0 L 580.0,495.0 L 665.0,495.0 L 665.0,457.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="b" data-target="c1" data-edge-type="main" data-edge-id="edge-3" data-train-only="false"/>
+  <path d="M 420.0,405.0 L 596.0,405.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="e1" data-target="c1" data-edge-type="skip" data-edge-id="edge-4" data-train-only="false" stroke-dasharray="8,4"/>
+  <path d="M 725.0,405.0 L 811.0,405.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="c1" data-target="d1" data-edge-type="main" data-edge-id="edge-5" data-train-only="false"/>
+  <path d="M 920.0,335.0 L 920.0,295.0 L 775.0,295.0 L 775.0,242.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="d1" data-target="c0" data-edge-type="main" data-edge-id="edge-6" data-train-only="false"/>
+  <text x="847.5" y="278.7" font-size="21" fill="#555555" text-anchor="middle" data-edge-label="edge-6">up x2</text>
+  <path d="M 275.0,190.0 L 706.0,190.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="e0" data-target="c0" data-edge-type="skip" data-edge-id="edge-7" data-train-only="false" stroke-dasharray="8,4"/>
+  <path d="M 835.0,190.0 L 876.0,190.0" stroke="#39485D" stroke-width="2.4" fill="none" marker-end="url(#arrow-c0-12)" data-source="c0" data-target="d0" data-edge-type="main" data-edge-id="edge-8" data-train-only="false"/>
+  <g data-node-id="e0" data-role="feature" data-execution="both" data-operation="conv" data-tensor-shape="H x W">
+    <polygon points="50.0,133.0 68.0,115.0 270.0,115.0 270.0,247.0 252.0,265.0 50.0,265.0" fill="#EAF1F8" stroke="#4777AA" stroke-width="2"/>
+    <path d="M 50.0,133.0 L 68.0,115.0 L 270.0,115.0 L 252.0,133.0 Z" fill="#eef2f7" stroke="#4777AA" stroke-width="1.5" data-decoration="tensor-face"/>
+    <path d="M 252.0,133.0 L 270.0,115.0 L 270.0,247.0 L 252.0,265.0 Z" fill="#cfdbe8" stroke="#4777AA" stroke-width="1.5" data-decoration="tensor-face"/>
+    <text x="151.0" y="189.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Conv encoder</text>
+    <text x="151.0" y="225.4" font-size="21" fill="#555555" text-anchor="middle">H x W</text>
+  </g>
+  <g data-node-id="e1" data-role="feature" data-execution="both" data-operation="down-conv" data-tensor-shape="H/2 x W/2">
+    <polygon points="225.0,355.6 240.6,340.0 415.0,340.0 415.0,454.4 399.4,470.0 225.0,470.0" fill="#EAF1F8" stroke="#4777AA" stroke-width="2"/>
+    <path d="M 225.0,355.6 L 240.6,340.0 L 415.0,340.0 L 399.4,355.6 Z" fill="#eef2f7" stroke="#4777AA" stroke-width="1.5" data-decoration="tensor-face"/>
+    <path d="M 399.4,355.6 L 415.0,340.0 L 415.0,454.4 L 399.4,470.0 Z" fill="#cfdbe8" stroke="#4777AA" stroke-width="1.5" data-decoration="tensor-face"/>
+    <text x="312.2" y="403.2" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Down + conv</text>
+    <text x="312.2" y="439.2" font-size="21" fill="#555555" text-anchor="middle">H/2 x W/2</text>
+  </g>
+  <g data-node-id="b" data-role="feature" data-execution="both" data-operation="bottleneck" data-tensor-shape="H/4 x W/4">
+    <polygon points="491.0,540.2 505.2,526.0 669.0,526.0 669.0,629.8 654.8,644.0 491.0,644.0" fill="#FBEFE5" stroke="#B7673B" stroke-width="2"/>
+    <path d="M 491.0,540.2 L 505.2,526.0 L 669.0,526.0 L 654.8,540.2 Z" fill="#f8f1ed" stroke="#B7673B" stroke-width="1.5" data-decoration="tensor-face"/>
+    <path d="M 654.8,540.2 L 669.0,526.0 L 669.0,629.8 L 654.8,644.0 Z" fill="#ecd7cc" stroke="#B7673B" stroke-width="1.5" data-decoration="tensor-face"/>
+    <text x="572.9" y="582.5" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Bottleneck</text>
+    <text x="572.9" y="618.5" font-size="21" fill="#555555" text-anchor="middle">H/4 x W/4</text>
+  </g>
+  <g data-node-id="c1" data-role="generic" data-execution="both" data-operation="concat">
+    <ellipse cx="665.0" cy="405.0" rx="55.0" ry="38.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2"/>
+    <text x="665.0" y="413.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Concat</text>
+  </g>
+  <g data-node-id="d1" data-role="feature" data-execution="both" data-operation="decode" data-tensor-shape="H/2 x W/2">
+    <polygon points="825.0,355.6 840.6,340.0 1015.0,340.0 1015.0,454.4 999.4,470.0 825.0,470.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2"/>
+    <path d="M 825.0,355.6 L 840.6,340.0 L 1015.0,340.0 L 999.4,355.6 Z" fill="#ecf4f3" stroke="#318B80" stroke-width="1.5" data-decoration="tensor-face"/>
+    <path d="M 999.4,355.6 L 1015.0,340.0 L 1015.0,454.4 L 999.4,470.0 Z" fill="#c9e0dd" stroke="#318B80" stroke-width="1.5" data-decoration="tensor-face"/>
+    <text x="912.2" y="403.2" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Decoder</text>
+    <text x="912.2" y="439.2" font-size="21" fill="#555555" text-anchor="middle">H/2 x W/2</text>
+  </g>
+  <g data-node-id="c0" data-role="generic" data-execution="both" data-operation="concat">
+    <ellipse cx="775.0" cy="190.0" rx="55.0" ry="38.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2"/>
+    <text x="775.0" y="198.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Concat</text>
+  </g>
+  <g data-node-id="d0" data-role="feature" data-execution="both" data-operation="decode" data-tensor-shape="H x W">
+    <polygon points="890.0,133.0 908.0,115.0 1110.0,115.0 1110.0,247.0 1092.0,265.0 890.0,265.0" fill="#E9F4F1" stroke="#318B80" stroke-width="2"/>
+    <path d="M 890.0,133.0 L 908.0,115.0 L 1110.0,115.0 L 1092.0,133.0 Z" fill="#ecf4f3" stroke="#318B80" stroke-width="1.5" data-decoration="tensor-face"/>
+    <path d="M 1092.0,133.0 L 1110.0,115.0 L 1110.0,247.0 L 1092.0,265.0 Z" fill="#c9e0dd" stroke="#318B80" stroke-width="1.5" data-decoration="tensor-face"/>
+    <text x="991.0" y="189.4" font-size="24" fill="#253348" text-anchor="middle" font-weight="bold">Decoder</text>
+    <text x="991.0" y="225.4" font-size="21" fill="#555555" text-anchor="middle">H x W</text>
+  </g>
+  <text x="50.0" y="50.0" font-size="24" fill="#4777AA" text-anchor="start">ENCODING</text>
+  <text x="420.0" y="50.0" font-size="24" fill="#39485D" text-anchor="start">SAME-SCALE SKIPS</text>
+  <text x="890.0" y="50.0" font-size="24" fill="#318B80" text-anchor="start">DECODING</text>
+  <text x="700.0" y="515.0" font-size="21" fill="#39485D" text-anchor="start">up x2</text>
+  <text x="25.0" y="695.0" font-size="21" fill="#39485D" text-anchor="start">Concat: channel-wise joining. Dashed: same-scale skip. Vertical transitions: down / up x2.</text>
+  <text x="25.0" y="732.0" font-size="21" fill="#39485D" text-anchor="start">Stage outputs named by producer. Block sizes: ordinal only; channels unspecified.</text>
+</svg>

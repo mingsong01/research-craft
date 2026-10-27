@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Project research records belong to the project using the Skill, not this source repository.
+.research/
+
+# Local credentials are not source artifacts.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+

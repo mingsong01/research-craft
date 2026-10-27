@@ -1,0 +1,271 @@
+{
+  "title": "Cross-modal research architecture",
+  "canvas": {
+    "width": 1165,
+    "height": 585
+  },
+  "style": {
+    "font_family": "Arial, Helvetica, sans-serif",
+    "font_size": 20.5,
+    "bg_color": "#FFFFFF",
+    "palette": [
+      "#0072B2",
+      "#009E73",
+      "#7B61A8",
+      "#E69F00",
+      "#D55E00"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "input",
+      "label": "Paired\ninput",
+      "sublabel": "image + text",
+      "x": 95,
+      "y": 275,
+      "width": 140,
+      "height": 130,
+      "role": "generic",
+      "fill": "#F3F4F6",
+      "stroke": "#6B7280"
+    },
+    {
+      "id": "image_encoder",
+      "label": "Image encoder",
+      "sublabel": "multiscale",
+      "x": 300,
+      "y": 155,
+      "width": 170,
+      "height": 94,
+      "role": "encoder",
+      "fill": "#DCEEF8",
+      "stroke": "#0072B2"
+    },
+    {
+      "id": "text_encoder",
+      "label": "Text encoder",
+      "sublabel": "tokens",
+      "x": 300,
+      "y": 395,
+      "width": 170,
+      "height": 94,
+      "role": "encoder",
+      "fill": "#DCEEF8",
+      "stroke": "#0072B2"
+    },
+    {
+      "id": "fusion",
+      "label": "Scale-aware\nfusion",
+      "x": 535,
+      "y": 275,
+      "width": 152,
+      "height": 120,
+      "shape": "diamond",
+      "role": "fusion",
+      "fill": "#ECE4F6",
+      "stroke": "#7B61A8"
+    },
+    {
+      "id": "novel",
+      "label": "Cross-modal\nrefinement",
+      "sublabel": "proposed module",
+      "x": 740,
+      "y": 275,
+      "width": 180,
+      "height": 126,
+      "role": "attention",
+      "fill": "#DDF3EF",
+      "stroke": "#009E73"
+    },
+    {
+      "id": "head",
+      "label": "Prediction\nhead",
+      "x": 950,
+      "y": 275,
+      "width": 140,
+      "height": 94,
+      "role": "generic",
+      "fill": "#F3F4F6",
+      "stroke": "#6B7280"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "x": 1100,
+      "y": 275,
+      "width": 80,
+      "height": 64,
+      "role": "output",
+      "fill": "#F8DDD7",
+      "stroke": "#D55E00"
+    },
+    {
+      "id": "aux_loss",
+      "label": "Alignment loss",
+      "sublabel": "training only",
+      "x": 740,
+      "y": 485,
+      "width": 176,
+      "height": 94,
+      "role": "auxiliary",
+      "fill": "#FCE8D5",
+      "stroke": "#E69F00",
+      "execution": "training-only"
+    }
+  ],
+  "edges": [
+    {
+      "from": "input",
+      "to": "image_encoder",
+      "waypoints": [
+        [
+          180,
+          275
+        ],
+        [
+          180,
+          155
+        ]
+      ],
+      "type": "main",
+      "id": "edge-1"
+    },
+    {
+      "from": "input",
+      "to": "text_encoder",
+      "waypoints": [
+        [
+          180,
+          275
+        ],
+        [
+          180,
+          395
+        ]
+      ],
+      "type": "main",
+      "id": "edge-2"
+    },
+    {
+      "from": "image_encoder",
+      "to": "fusion",
+      "waypoints": [
+        [
+          420,
+          155
+        ],
+        [
+          420,
+          275
+        ]
+      ],
+      "type": "main",
+      "id": "edge-3"
+    },
+    {
+      "from": "text_encoder",
+      "to": "fusion",
+      "waypoints": [
+        [
+          420,
+          395
+        ],
+        [
+          420,
+          275
+        ]
+      ],
+      "type": "main",
+      "id": "edge-4"
+    },
+    {
+      "from": "fusion",
+      "to": "novel",
+      "type": "main",
+      "id": "edge-5"
+    },
+    {
+      "from": "novel",
+      "to": "head",
+      "type": "main",
+      "id": "edge-6"
+    },
+    {
+      "from": "head",
+      "to": "output",
+      "type": "main",
+      "id": "edge-7"
+    },
+    {
+      "from": "novel",
+      "to": "aux_loss",
+      "style": "dotted",
+      "type": "training-only",
+      "id": "edge-8"
+    },
+    {
+      "from": "image_encoder",
+      "to": "novel",
+      "waypoints": [
+        [
+          420,
+          155
+        ],
+        [
+          420,
+          53
+        ],
+        [
+          740,
+          53
+        ]
+      ],
+      "style": "dashed",
+      "type": "skip",
+      "label": "detail skip",
+      "id": "edge-9"
+    }
+  ],
+  "groups": [
+    {
+      "id": "modal_encoders",
+      "label": "Modal encoders",
+      "node_ids": [
+        "image_encoder",
+        "text_encoder"
+      ],
+      "fill": "#F7FAFC",
+      "stroke": "#CBD5E1",
+      "padding": 24
+    },
+    {
+      "id": "joint_reasoning",
+      "label": "Joint reasoning",
+      "node_ids": [
+        "fusion",
+        "novel"
+      ],
+      "fill": "#FAF8FC",
+      "stroke": "#D8CDEA",
+      "padding": 24
+    }
+  ],
+  "labels": [
+    {
+      "text": "solid: main inference; dashed: detail skip",
+      "x": 28,
+      "y": 555,
+      "font_size": 17.5,
+      "color": "#333333",
+      "anchor": "start"
+    },
+    {
+      "text": "dotted: training only",
+      "x": 610,
+      "y": 555,
+      "font_size": 17.5,
+      "color": "#333333",
+      "anchor": "start"
+    }
+  ]
+}

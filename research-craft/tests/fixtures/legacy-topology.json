@@ -1,0 +1,14 @@
+{
+  "nodes": ["input", "image_encoder", "text_encoder", "fusion", "novel", "head", "output", "aux_loss"],
+  "edges": [
+    {"source": "input", "target": "image_encoder"},
+    {"source": "input", "target": "text_encoder"},
+    {"source": "image_encoder", "target": "fusion"},
+    {"source": "text_encoder", "target": "fusion"},
+    {"source": "fusion", "target": "novel"},
+    {"source": "novel", "target": "head"},
+    {"source": "head", "target": "output"},
+    {"source": "novel", "target": "aux_loss"},
+    {"source": "image_encoder", "target": "novel"}
+  ]
+}

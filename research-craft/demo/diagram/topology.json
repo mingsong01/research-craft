@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    "input",
+    "image_encoder",
+    "text_encoder",
+    "fusion",
+    "novel",
+    "head",
+    "output",
+    {
+      "id": "aux_loss",
+      "execution": "training-only"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input",
+      "target": "image_encoder",
+      "id": "edge-1",
+      "type": "main"
+    },
+    {
+      "source": "input",
+      "target": "text_encoder",
+      "id": "edge-2",
+      "type": "main"
+    },
+    {
+      "source": "image_encoder",
+      "target": "fusion",
+      "id": "edge-3",
+      "type": "main"
+    },
+    {
+      "source": "text_encoder",
+      "target": "fusion",
+      "id": "edge-4",
+      "type": "main"
+    },
+    {
+      "source": "fusion",
+      "target": "novel",
+      "id": "edge-5",
+      "type": "main"
+    },
+    {
+      "source": "novel",
+      "target": "head",
+      "id": "edge-6",
+      "type": "main"
+    },
+    {
+      "source": "head",
+      "target": "output",
+      "id": "edge-7",
+      "type": "main"
+    },
+    {
+      "source": "novel",
+      "target": "aux_loss",
+      "id": "edge-8",
+      "type": "training-only"
+    },
+    {
+      "source": "image_encoder",
+      "target": "novel",
+      "id": "edge-9",
+      "type": "skip"
+    }
+  ]
+}

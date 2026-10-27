@@ -1,0 +1,22 @@
+[
+  {"id":"T01","query":"Our validation accuracy dropped only on seed 3 after changing augmentation. Analyze the anomaly, do not edit code, and tell me the cheapest experiment that separates data drift from checkpoint variance.","should_trigger":true},
+  {"id":"T02","query":"Design and preregister a formal learning-rate sensitivity experiment with a primary metric, decision threshold, controls, and falsifying observation.","should_trigger":true},
+  {"id":"T03","query":"Reviewer 2 says our ablation does not isolate the interaction between modules A and B. Work out the underlying concern and the minimum missing evidence.","should_trigger":true},
+  {"id":"T04","query":"Continue yesterday's latency regression investigation using only the active state and relevant experiment row.","should_trigger":true},
+  {"id":"T05","query":"Check whether the causal language in this result is justified; p is below 0.05 but assignment was observational.","should_trigger":true},
+  {"id":"T06","query":"Create a publication-quality figure from these experiment results and make the data, aggregation, uncertainty, and experiment provenance auditable.","should_trigger":true},
+  {"id":"T07","query":"Search the latest primary literature on this retrieval method, identify contradictory findings, and bound any novelty claim to what was actually searched.","should_trigger":true},
+  {"id":"T08","query":"Implement option A, run the regression checks, compare the benchmark with the same workload, and record the decision evidence.","should_trigger":true},
+  {"id":"T09","query":"These two benchmarks report different network bytes. Diagnose whether they measure payload, protocol, or wire traffic before comparing them.","should_trigger":true},
+  {"id":"T10","query":"Audit whether the manuscript numbers, Figure 4 source data, experiment manifest, and reviewer response are mutually consistent.","should_trigger":true},
+  {"id":"N01","query":"Explain what Python list slicing does.","should_trigger":false},
+  {"id":"N02","query":"Translate this abstract into Chinese without changing its meaning.","should_trigger":false},
+  {"id":"N03","query":"Fix the spacing on this CSS button and test it in the browser.","should_trigger":false},
+  {"id":"N04","query":"Make a simple pie chart from 40, 35, and 25 for a marketing slide.","should_trigger":false},
+  {"id":"N05","query":"Convert this PDF to images.","should_trigger":false},
+  {"id":"N06","query":"Create a reminder for tomorrow morning.","should_trigger":false},
+  {"id":"N07","query":"Write a friendly birthday message for my colleague.","should_trigger":false},
+  {"id":"N08","query":"Rename this file and update the import path.","should_trigger":false},
+  {"id":"N09","query":"Summarize the text I pasted in three bullets; no verification is needed.","should_trigger":false},
+  {"id":"N10","query":"Create an Instagram version of this photo.","should_trigger":false}
+]

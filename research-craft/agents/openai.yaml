@@ -1,0 +1,4 @@
+interface:
+  display_name: "研匠 · ResearchCraft"
+  short_description: "Evidence-driven research engineering workflow"
+  default_prompt: "Use $research-craft to analyze this research or engineering task with minimal context and evidence-backed conclusions."

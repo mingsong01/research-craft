@@ -1,0 +1,270 @@
+{
+  "canvas": {
+    "width": 1550,
+    "height": 765
+  },
+  "style": {
+    "font_size": 30,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "palette": [
+      "#39485D",
+      "#4777AA",
+      "#318B80",
+      "#B7673B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "x",
+      "label": "Input sequence",
+      "x": 160,
+      "y": 370,
+      "width": 260,
+      "height": 220,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "representation": "tokens"
+    },
+    {
+      "id": "local",
+      "label": "Local mixing",
+      "x": 500,
+      "y": 260,
+      "width": 250,
+      "height": 130,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "local-mix"
+    },
+    {
+      "id": "scan",
+      "label": "Forward scan",
+      "x": 850,
+      "y": 260,
+      "width": 260,
+      "height": 150,
+      "stroke": "#B7673B",
+      "fill": "#FBEFE5",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "sublabel": "SSM state path",
+      "operation": "forward-ssm",
+      "emphasis": true
+    },
+    {
+      "id": "gate",
+      "label": "Gate",
+      "x": 680,
+      "y": 530,
+      "width": 210,
+      "height": 120,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "gate"
+    },
+    {
+      "id": "mul",
+      "label": "×",
+      "x": 1110,
+      "y": 370,
+      "width": 70,
+      "height": 70,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "circle",
+      "operation": "multiply"
+    },
+    {
+      "id": "proj",
+      "label": "Projection",
+      "x": 1370,
+      "y": 370,
+      "width": 260,
+      "height": 130,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "projection"
+    }
+  ],
+  "edges": [
+    {
+      "from": "x",
+      "to": "local",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          320,
+          315
+        ],
+        [
+          320,
+          260
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.25
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-1"
+    },
+    {
+      "from": "local",
+      "to": "scan",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-2"
+    },
+    {
+      "from": "scan",
+      "to": "mul",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          1110,
+          260
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-3"
+    },
+    {
+      "from": "x",
+      "to": "gate",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          320,
+          425
+        ],
+        [
+          320,
+          530
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.75
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-4"
+    },
+    {
+      "from": "gate",
+      "to": "mul",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "waypoints": [
+        [
+          1110,
+          530
+        ]
+      ],
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "id": "edge-5"
+    },
+    {
+      "from": "mul",
+      "to": "proj",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-6"
+    }
+  ],
+  "labels": [
+    {
+      "text": "GATED STATE-SPACE PATH",
+      "x": 35,
+      "y": 70,
+      "font_size": 30,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "State-space branch",
+      "x": 375,
+      "y": 165,
+      "font_size": 27,
+      "color": "#B7673B",
+      "anchor": "start"
+    },
+    {
+      "text": "Input-dependent gate",
+      "x": 575,
+      "y": 640,
+      "font_size": 27,
+      "color": "#318B80",
+      "anchor": "start"
+    },
+    {
+      "text": "×: elementwise multiplication. One forward scan; no reverse scan or residual is implied.",
+      "x": 35,
+      "y": 695,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Synthetic branch contract, not a reproduction of Mamba or MambaVision.",
+      "x": 35,
+      "y": 730,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    }
+  ]
+}

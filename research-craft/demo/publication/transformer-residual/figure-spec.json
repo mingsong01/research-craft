@@ -1,0 +1,290 @@
+{
+  "canvas": {
+    "width": 1410,
+    "height": 585
+  },
+  "style": {
+    "font_size": 27,
+    "font_family": "Arial, Helvetica, sans-serif",
+    "palette": [
+      "#39485D",
+      "#4777AA",
+      "#318B80",
+      "#B7673B"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "tokens",
+      "label": "Tokens",
+      "x": 110,
+      "y": 280,
+      "width": 140,
+      "height": 180,
+      "stroke": "#4777AA",
+      "fill": "#EAF1F8",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "representation": "tokens"
+    },
+    {
+      "id": "norm1",
+      "label": "Norm",
+      "x": 305,
+      "y": 280,
+      "width": 120,
+      "height": 100,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "norm"
+    },
+    {
+      "id": "attn",
+      "label": "Self-attention",
+      "x": 550,
+      "y": 280,
+      "width": 260,
+      "height": 160,
+      "stroke": "#B7673B",
+      "fill": "#FBEFE5",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "self-attention",
+      "emphasis": true
+    },
+    {
+      "id": "add1",
+      "label": "+",
+      "x": 770,
+      "y": 280,
+      "width": 60,
+      "height": 60,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "circle",
+      "operation": "add"
+    },
+    {
+      "id": "norm2",
+      "label": "Norm",
+      "x": 940,
+      "y": 280,
+      "width": 120,
+      "height": 100,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "norm"
+    },
+    {
+      "id": "mlp",
+      "label": "MLP",
+      "x": 1130,
+      "y": 280,
+      "width": 160,
+      "height": 120,
+      "stroke": "#318B80",
+      "fill": "#E9F4F1",
+      "text_color": "#253348",
+      "shape": "rounded",
+      "operation": "mlp"
+    },
+    {
+      "id": "add2",
+      "label": "+",
+      "x": 1335,
+      "y": 280,
+      "width": 60,
+      "height": 60,
+      "stroke": "#39485D",
+      "fill": "#F3F5F7",
+      "text_color": "#253348",
+      "shape": "circle",
+      "operation": "add"
+    }
+  ],
+  "edges": [
+    {
+      "from": "tokens",
+      "to": "norm1",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-1"
+    },
+    {
+      "from": "norm1",
+      "to": "attn",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-2"
+    },
+    {
+      "from": "attn",
+      "to": "add1",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-3"
+    },
+    {
+      "from": "tokens",
+      "to": "add1",
+      "type": "residual",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "label": "identity residual",
+      "label_segment": "longest-horizontal",
+      "waypoints": [
+        [
+          110,
+          100
+        ],
+        [
+          770,
+          100
+        ]
+      ],
+      "source_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "top",
+        "offset": 0.5
+      },
+      "id": "edge-4"
+    },
+    {
+      "from": "add1",
+      "to": "norm2",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-5"
+    },
+    {
+      "from": "norm2",
+      "to": "mlp",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-6"
+    },
+    {
+      "from": "mlp",
+      "to": "add2",
+      "type": "main",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "source_port": {
+        "side": "right",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "left",
+        "offset": 0.5
+      },
+      "id": "edge-7"
+    },
+    {
+      "from": "add1",
+      "to": "add2",
+      "type": "residual",
+      "thickness": 2.4,
+      "color": "#39485D",
+      "label": "identity residual",
+      "label_segment": "longest-horizontal",
+      "waypoints": [
+        [
+          770,
+          440
+        ],
+        [
+          1335,
+          440
+        ]
+      ],
+      "source_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "target_port": {
+        "side": "bottom",
+        "offset": 0.5
+      },
+      "id": "edge-8"
+    }
+  ],
+  "labels": [
+    {
+      "text": "PRE-NORM RESIDUAL BLOCK",
+      "x": 40,
+      "y": 45,
+      "font_size": 27,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "+: elementwise addition. Residuals enter separate ports; no training-only path is shown.",
+      "x": 40,
+      "y": 515,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    },
+    {
+      "text": "Synthetic illustrative block; no model-specific head count, depth or dimensions are asserted.",
+      "x": 40,
+      "y": 550,
+      "font_size": 24,
+      "color": "#39485D",
+      "anchor": "start"
+    }
+  ]
+}

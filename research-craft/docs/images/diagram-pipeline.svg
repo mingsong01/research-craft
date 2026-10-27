@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="950" viewBox="0 0 1700 950" role="img">
+<title>ResearchCraft — original documentation illustration</title>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF7FF"/></linearGradient><linearGradient id="accent"><stop stop-color="#2769F5"/><stop offset="1" stop-color="#09D4DE"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3FAFF"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1L9 5L0 9" fill="none" stroke="#10ACD0" stroke-width="1.8"/></marker><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#C5E0F1" stroke-width=".7"/></pattern></defs>
+<rect width="1700" height="950" rx="0" fill="url(#bg)"/>
+<rect width="1700" height="950" fill="url(#grid)" opacity="0.28"/>
+<text x="64" y="44" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="600" fill="#607C96" text-anchor="start" letter-spacing="2.3">MODEL DIAGRAM PIPELINE</text>
+<text x="64" y="105" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="43" font-weight="700" fill="#0B1C38" text-anchor="start">模型图从真实结构开始，以实际成品验收</text>
+<text x="65" y="145" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#607C96" text-anchor="start">Scientific topology and visual design are separate responsibilities.</text>
+<path d="M64 176L1636 176" fill="none" stroke="#CEE2F0" stroke-width="1.5"/>
+<rect x="64" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="100" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="100" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">1</text>
+<g transform="translate(152 288) scale(1)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15L6 32L21 49M47 15L62 32L47 49M39 9L29 55"/></g>
+<text x="186" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">结构证据</text>
+<text x="186" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Source</text>
+<text x="186" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">forward / 方法定义</text>
+<text x="186" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">形状、分支与运行条件</text>
+<path d="M311 372L324 372" fill="none" stroke="#02BBD2" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="328" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="364" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="364" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">2</text>
+<g transform="translate(416 288) scale(1)" fill="none" stroke="#02BBD2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><rect x="23" y="3" width="23" height="15" rx="3"/><rect x="2" y="44" width="22" height="15" rx="3"/><rect x="44" y="44" width="22" height="15" rx="3"/><path d="M34 18V31H13V44M34 31H55V44"/></g>
+<text x="450" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">拓扑合同</text>
+<text x="450" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Topology</text>
+<text x="450" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">节点、带类型连接</text>
+<text x="450" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">跳连 / 融合 / 训练路径</text>
+<path d="M575 372L588 372" fill="none" stroke="#02BBD2" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="592" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="628" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="628" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">3</text>
+<g transform="translate(680 288) scale(1)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20L34 4L63 20L34 36ZM5 33L34 49L63 33M5 46L34 62L63 46"/></g>
+<text x="714" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">两种构图</text>
+<text x="714" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Alternatives</text>
+<text x="714" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">不同阅读方向与层级</text>
+<text x="714" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">比较信息表达与密度</text>
+<path d="M839 372L852 372" fill="none" stroke="#02BBD2" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="856" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="892" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="892" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">4</text>
+<g transform="translate(944 288) scale(1)" fill="none" stroke="#02BBD2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4H43L56 17V61H15ZM43 4V18H56M24 29H46M24 39H46M24 49H39"/></g>
+<text x="978" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">可编辑源</text>
+<text x="978" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Editable source</text>
+<text x="978" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">FigureSpec / SVG</text>
+<text x="978" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">保留标签、模块与连线</text>
+<path d="M1103 372L1116 372" fill="none" stroke="#02BBD2" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1120" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="1156" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="1156" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">5</text>
+<g transform="translate(1208 288) scale(1)" fill="none" stroke="#2369EE" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="27" r="19"/><path d="M42 42L61 60M20 27H36M28 19V35"/></g>
+<text x="1242" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">渲染复核</text>
+<text x="1242" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Render &amp; inspect</text>
+<text x="1242" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">实际 PNG / PDF</text>
+<text x="1242" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">检查细节并局部修复</text>
+<path d="M1367 372L1380 372" fill="none" stroke="#02BBD2" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1384" y="234" width="244" height="304" rx="18" fill="white" stroke="#C9DFED" stroke-width="1.2"/>
+<circle cx="1420" cy="266" r="15" fill="#EDF5FF" stroke="none"/>
+<text x="1420" y="272" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#2369EE" text-anchor="middle">6</text>
+<g transform="translate(1472 288) scale(1)" fill="none" stroke="#02BBD2" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M34 4L57 14V34Q54 51 34 62Q14 51 11 34V14ZM22 31L30 39L47 22"/></g>
+<text x="1506" y="407" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#0B1C38" text-anchor="middle">最终尺寸</text>
+<text x="1506" y="439" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#607C96" text-anchor="middle">Final size</text>
+<text x="1506" y="479" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">物理宽度与灰度</text>
+<text x="1506" y="508" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#294562" text-anchor="middle">可读、完整且有边界</text>
+<rect x="64" y="591" width="1572" height="239" rx="22" fill="#F0F7FD" stroke="#D7E8F3" stroke-width="1.2"/>
+<text x="94" y="637" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#0B1C38" text-anchor="start">五项独立检查 / Five independent checks</text>
+<rect x="94" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
+<text x="115" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">科学拓扑</text>
+<text x="115" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Topology</text>
+<rect x="400" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
+<text x="421" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">信息表达</text>
+<text x="421" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Information</text>
+<rect x="706" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
+<text x="727" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">视觉质量</text>
+<text x="727" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Visual design</text>
+<rect x="1012" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
+<text x="1033" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">投稿尺寸</text>
+<text x="1033" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Final size</text>
+<rect x="1318" y="670" width="277" height="111" rx="15" fill="white" stroke="#D4E3EF" stroke-width="1.2"/>
+<text x="1339" y="709" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600" fill="#2369EE" text-anchor="start">可编辑性</text>
+<text x="1339" y="745" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#607C96" text-anchor="start">Editability</text>
+<text x="850" y="876" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="600" fill="#294562" text-anchor="middle">不编造维度或内部模块；不以 SVG PASS 代替实际看图。</text>
+<text x="64" y="915" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#2369EE" text-anchor="start">research-craft</text>
+<text x="1636" y="915" font-family="Segoe UI, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#607C96" text-anchor="end">Illustrated workflow · a publication target, not a quality guarantee</text>
+</svg>

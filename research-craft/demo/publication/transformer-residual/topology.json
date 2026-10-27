@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "tokens"
+    },
+    {
+      "id": "norm1",
+      "operation": "norm"
+    },
+    {
+      "id": "attn",
+      "operation": "self-attention"
+    },
+    {
+      "id": "add1",
+      "operation": "add"
+    },
+    {
+      "id": "norm2",
+      "operation": "norm"
+    },
+    {
+      "id": "mlp",
+      "operation": "mlp"
+    },
+    {
+      "id": "add2",
+      "operation": "add"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "tokens",
+      "target": "norm1",
+      "type": "main"
+    },
+    {
+      "id": "edge-2",
+      "source": "norm1",
+      "target": "attn",
+      "type": "main"
+    },
+    {
+      "id": "edge-3",
+      "source": "attn",
+      "target": "add1",
+      "type": "main"
+    },
+    {
+      "id": "edge-4",
+      "source": "tokens",
+      "target": "add1",
+      "type": "residual"
+    },
+    {
+      "id": "edge-5",
+      "source": "add1",
+      "target": "norm2",
+      "type": "main"
+    },
+    {
+      "id": "edge-6",
+      "source": "norm2",
+      "target": "mlp",
+      "type": "main"
+    },
+    {
+      "id": "edge-7",
+      "source": "mlp",
+      "target": "add2",
+      "type": "main"
+    },
+    {
+      "id": "edge-8",
+      "source": "add1",
+      "target": "add2",
+      "type": "residual"
+    }
+  ]
+}
